@@ -1,0 +1,96 @@
+<!-- login screen -->
+<!-- Created by Yuheng Chen -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.myfirstapplication.LoginActivity" >
+    
+    <TextView
+        android:id="@+id/WelcomText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:text="Welcome"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+     <TextView
+        android:id="@+id/UserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="82dp" 
+        android:text="UserName"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+     
+     <EditText
+        android:id="@+id/UserNameTextbox"
+        android:layout_width="282dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/UserName"
+        android:ems="10"
+        android:hint="type your username" />
+
+     <TextView
+        android:id="@+id/Password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/UserNameTextbox"
+        android:text="Password"
+        android:textAppearance="?android:attr/textAppearanceMedium" />   
+
+    <EditText
+        android:id="@+id/PasswordTextbox"
+        android:layout_width="282dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/Password"
+        android:ems="10"
+        android:hint="type your password"
+        android:inputType="textPassword" >
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/LoginButton"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"   
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="70dp"
+        android:text="login" 
+        android:onClick="Login"/>
+
+    <Button
+        android:id="@+id/SignUpButton"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="18dp"
+        android:text="sign up" />
+
+    <Button
+        android:id="@+id/ForgetPasswordButton"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/SignUpButton"
+        android:layout_alignBottom="@+id/SignUpButton"
+        android:layout_alignRight="@+id/LoginButton"
+        android:layout_marginRight="16dp"
+        android:text="forget password" />
+
+</RelativeLayout>

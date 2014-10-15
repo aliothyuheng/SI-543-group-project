@@ -42,7 +42,8 @@
             android:layout_height="40dp"
             android:layout_alignParentLeft="true"
             android:layout_below="@+id/Post_1"
-            android:text="Message" />
+            android:text="Message"
+            android:onClick="MessageScreen"/>
         
         <Button
             android:id="@+id/Reply_1"
@@ -51,7 +52,8 @@
             android:layout_height="40dp"
             android:layout_toRightOf="@+id/Message_1"
             android:layout_below="@+id/Post_1"
-            android:text="Reply" />
+            android:text="Reply"
+            android:onClick="ConversationScreen"/>
         
         <Button
             android:id="@+id/Profile_1"
@@ -85,7 +87,8 @@
             android:layout_height="40dp"
             android:layout_alignParentLeft="true"
             android:layout_below="@+id/Post_2"
-            android:text="Message" />
+            android:text="Message"
+            android:onClick="MessageScreen"/>
 
         <Button
             android:id="@+id/Reply_2"
@@ -94,7 +97,8 @@
             android:layout_height="40dp"
             android:layout_below="@+id/Post_2"
             android:layout_toRightOf="@+id/Message_2"
-            android:text="Reply" />
+            android:text="Reply"
+            android:onClick="ConversationScreen"/>
 
         <Button
             android:id="@+id/Profile_2"
@@ -128,7 +132,8 @@
             android:layout_height="40dp"
             android:layout_alignParentLeft="true"
             android:layout_below="@+id/Post_3"
-            android:text="Message" />
+            android:text="Message"
+            android:onClick="MessageScreen" />
 
         <Button
             android:id="@+id/Reply_3"
@@ -137,7 +142,8 @@
             android:layout_height="40dp"
             android:layout_below="@+id/Post_3"
             android:layout_toRightOf="@+id/Message_3"
-            android:text="Reply" />
+            android:text="Reply"
+            android:onClick="ConversationScreen"/>
 
         <Button
             android:id="@+id/Profile_3"
@@ -165,7 +171,8 @@
 	    android:layout_alignParentBottom="true"
 	    android:layout_toRightOf="@+id/homeButton"
 	    android:layout_marginLeft="10dp"
-	    android:text="Post" />
+	    android:text="Post"
+        android:onClick="NewPostScreen"/>
 
 	<Button
 	    android:id="@+id/newProfileButton"

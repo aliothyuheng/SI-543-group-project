@@ -41,6 +41,16 @@ public class HomeScreenActivity extends ActionBarActivity {
 		Intent intent = new Intent(this, FilterActivity.class);
 		startActivity(intent);
 	}
+
+    public void MessageScreen(View view){
+        Intent intent = new Intent(this, MessageActivity.class);
+        startActivity(intent);
+    }
+
+    public void ConversationScreen(View view){
+        Intent intent = new Intent(this, ConversationActivity.class);
+        startActivity(intent);
+    }
 }
 
 //What's next

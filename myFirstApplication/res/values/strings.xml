@@ -6,5 +6,22 @@
     <string name="action_settings">Settings</string>
     <string name="title_activity_home_screen">HomeScreenActivity</string>
     <string name="title_activity_filter">FilterActivity</string>
+    <string name="title_activity_conversation">ConversationActivity</string>
+    <string name="title_activity_message">MessageActivity</string>
+    <string name="title_activity_new_psot">NewPsotActivity</string>
+    
+    <string name="categories_prompt">Categories</string>
+    <string-array name="categories_array">
+        <item>Clothing</item>
+        <item>Food</item>
+        <item>Music</item>
+        <item>Shoes</item>
+    </string-array>
+    <string-array name="budget_array">
+        <item>$</item>
+        <item>$$</item>
+        <item>$$$</item>
+        </string-array>
+    <string name="budget_prompt">Budget</string>
 
 </resources>

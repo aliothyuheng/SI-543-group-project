@@ -42,3 +42,10 @@ public class HomeScreenActivity extends ActionBarActivity {
 		startActivity(intent);
 	}
 }
+
+//What's next
+//1. When click the "reply" under each post, it will go to the reply screen.
+//2. When click the "message" under each post, it will go to the message screen and start chatting.
+//3. When click the "profile" under each post, it will go to the user profile screen and view the profile of the poster.
+//4. When click the "post" at the bottom, it will go to the new post screen.
+//5. When click the "profile" at the bottom, it will go to the user's profile screen. 

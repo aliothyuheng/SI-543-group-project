@@ -1,15 +1,13 @@
 /*Nick Malzahn*/
-
-package com.example.shopwithme;
+package com.example.myfirstapplication;
 
 import android.support.v7.app.ActionBarActivity;
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
-public class Message extends ActionBarActivity {
+public class MessageActivity extends ActionBarActivity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -36,12 +34,14 @@ public class Message extends ActionBarActivity {
 		return super.onOptionsItemSelected(item);
 	}
 	
+	/*
 	public void ConversationScreen(View view) {
-		Intent intent = new Intent(this, Conversation.class);
+		Intent intent = new Intent(this, MessageActivity.class);
 		startActivity(intent);
-	}
+	}*/
 	
-// Text that user writes in message box appears on same screen and gets sent to directed user
-// user can click on another user's name in order to go to their profile page	
+	// Text that user writes in message box appears on same screen and gets sent to directed user
+	// user can click on another user's name in order to go to their profile page	
 
 }
+

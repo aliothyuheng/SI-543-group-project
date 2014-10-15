@@ -43,3 +43,8 @@ public class LoginActivity extends ActionBarActivity {
 	}
 	
 }
+
+//What's next
+//1. check whether the username and password are stored in the database
+//2. if not, try forget password to retrieve the password back, go to the password reset screen
+//3. or, sign up new accout, go to the new account screen

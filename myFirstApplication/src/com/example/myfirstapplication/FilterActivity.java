@@ -43,3 +43,6 @@ public class FilterActivity extends ActionBarActivity {
 	}
 	
 }
+
+//What's next
+//After user hit submit, it will sort out the posts that meet the criteria and show on the home screen

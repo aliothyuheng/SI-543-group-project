@@ -1,0 +1,91 @@
+<!-- Nick Malzahn -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.example.shopwithme.NewPost" 
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Post" 
+        android:textSize="40sp"
+        android:layout_marginBottom="10dp"/>
+    
+    <LinearLayout 
+        android:id="@+id/CategoryContainer"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+    
+	    <TextView 
+	        android:id="@+id/Category"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:text="Category: " 
+	        android:textSize="30sp"/> 
+	    
+	    <Spinner
+	        android:id="@+id/spinner1"
+   			android:layout_width="match_parent"
+    		android:layout_height="wrap_content" 
+    		android:entries="@array/categories_array"
+    		android:prompt="@string/categories_prompt"
+        	/>
+	    
+	    <TextView 
+	        android:id="@+id/budget"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:text="Budget: "
+	        android:textSize="30sp" />
+	    
+	    <Spinner
+	        android:id="@+id/budgetSpinner"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:entries="@array/budget_array"
+	        android:prompt="@string/budget_prompt"/>
+	    
+	    <TextView 
+	        android:id="@+id/location"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:text="Location: " 
+	        android:textSize="30sp"/>
+	    
+	    <EditText 
+	        android:id="@+id/editLocation"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:hint="Enter desired location..."
+	        android:imeOptions="actionDone"
+	        android:singleLine="true"
+	        />
+	    
+	    <EditText 
+	        android:id="@+id/editPost"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:hint="Edit Post here..."
+	        android:textSize="30sp"
+	        android:imeOptions="actionDone"
+	        android:layout_marginTop="20dp"/>
+	        
+	    
+	    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit" 
+        android:onClick="MessageScreen"/>
+        
+     </LinearLayout>
+        
+      
+
+</LinearLayout>

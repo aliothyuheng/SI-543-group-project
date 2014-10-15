@@ -1,0 +1,52 @@
+<!-- Nick Malzahn -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.example.shopwithme.Message" 
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/messageTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Message" 
+        android:textSize="30sp"
+        android:layout_marginBottom="10dp"/>
+    
+    <TextView 
+        android:id="@+id/userSueMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sue: Hi, I'd really like to meet up with you for some shoe shopping. Any interest?"
+        android:textSize="20sp"
+        />
+    
+    <TextView 
+        android:id="@+id/userMaryMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mary: Sure! Where would you like to go?"
+        android:textSize="20sp"
+        />
+    
+    <EditText 
+        android:id="@+id/messageBox"
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:hint="Type Message here..."
+    	android:textSize="20sp"
+    	android:imeOptions="actionDone"
+    	/>
+    
+    <Button 
+        android:id="@+id/MessageSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit" 
+        android:onClick="ConversationScreen"/>
+        />
+    
+</LinearLayout>

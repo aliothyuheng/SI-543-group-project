@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ShopWithMe</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="Welcome">Welcome</string>
+    <string name="UserName">UserName</string>
+    <string name="type_username">type your username</string>
+    <string name="Password">Password</string>
+    <string name="type_password">type your password</string>
+    <string name="login">login</string>
+    <string name="sign_up">sign up</string>
+    <string name="forget_password">forget password</string>
+    <string name="title_activity_home_screen">HomeScreenActivity</string>
+    <string name="Home">Home</string>
+    <string name="Post_1">Mary:I wants to go shopping</string>
+    <string name="Message">Message</string>
+    <string name="Reply">Reply</string>
+    <string name="Profile">Profile</string>
+    <string name="Post_2">Sue:I wants to shop for shoes</string>
+    <string name="Post_3">Susan: Anyone wants to shop for clothes?</string>
+    <string name="Post">Post</string>
+    <string name="Filter">Filter</string>
+    <string name="title_activity_filter">FilterActivity</string>
+    <string name="Budget">Budget</string>
+    <string name="$">$</string>
+    <string name="$$">$$</string>
+    <string name="$$$">$$$</string>
+    <string name="Catoroty">Catoroty</string>
+    <string name="clothing">Clothing</string>
+    <string name="food">Food</string>
+    <string name="music">Musicy</string>
+    <string name="souvenir">Souvenir</string>
+    <string name="Location">Location</string>
+    <string name="Submit">Submit</string>
+    <string name="title_activity_message">MessageActivity</string>
+    <string name="title_activity_conversation">ConversationActivity</string>
+    <string name="title_activity_new_post">NewPostActivity</string>
+
+    <string name="categories_prompt">Categories</string>
+    <string-array name="categories_array">
+        <item>Clothing</item>
+        <item>Food</item>
+        <item>Music</item>
+        <item>Shoes</item>
+    </string-array>
+    <string-array name="budget_array">
+        <item>$</item>
+        <item>$$</item>
+        <item>$$$</item>
+        </string-array>
+    <string name="budget_prompt">Budget</string>
+</resources>

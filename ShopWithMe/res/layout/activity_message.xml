@@ -45,6 +45,5 @@
         android:layout_height="wrap_content"
         android:text="@string/Submit" 
         android:onClick="ConversationScreen"/>
-        />
 
 </LinearLayout>

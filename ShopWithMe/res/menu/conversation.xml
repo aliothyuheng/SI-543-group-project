@@ -3,9 +3,21 @@
     tools:context="com.example.shopwithme.ConversationActivity" >
 
     <item
-        android:id="@+id/action_settings"
+        android:id="@+id/action_home"
         android:orderInCategory="100"
         android:showAsAction="never"
-        android:title="@string/action_settings"/>
+        android:title="@string/Home"/>
+    
+    <item
+        android:id="@+id/action_post"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/Post"/>
+
+    <item
+        android:id="@+id/action_profile"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/Profile"/>
 
 </menu>

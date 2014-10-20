@@ -15,8 +15,9 @@
     <string name="title_activity_home_screen">HomeScreenActivity</string>
     <string name="Home">Home</string>
     <string name="Post_1">Mary:I wants to go shopping</string>
-    <string name="Message">Message</string>
-    <string name="Reply">Reply</string>
+    <string name="Message">Message to the Poster</string>
+    <string name="Reply">Reply to this Post</string>
+    <string name="Poster_profile">View poster profile</string>
     <string name="Profile">Profile</string>
     <string name="Post_2">Sue:I wants to shop for shoes</string>
     <string name="Post_3">Susan: Anyone wants to shop for clothes?</string>
@@ -51,4 +52,12 @@
         <item>$$$</item>
         </string-array>
     <string name="budget_prompt">Budget</string>
+    
+    <string name="city_prompt">Choose a city</string>
+    <string-array name="city_arrays">
+        <item>Ann Arbor</item>
+        <item>New York</item>
+        <item>Chicago</item>
+        <item>Los Angeles</item>
+    </string-array>
 </resources>

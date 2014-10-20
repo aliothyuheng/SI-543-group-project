@@ -73,8 +73,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="15dp"
         android:layout_marginBottom="18dp"
+        android:layout_alignStart="@+id/LoginButton"     
         android:text="@string/sign_up" />
 
     <Button
@@ -82,10 +82,11 @@
         style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="18dp"
         android:layout_alignBaseline="@+id/SignUpButton"
         android:layout_alignBottom="@+id/SignUpButton"
         android:layout_alignEnd="@+id/LoginButton"
-        android:layout_marginEnd="16dp"
         android:text="@string/forget_password" />
 
 </RelativeLayout>

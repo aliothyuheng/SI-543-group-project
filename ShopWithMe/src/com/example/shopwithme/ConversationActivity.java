@@ -1,6 +1,7 @@
 package com.example.shopwithme;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -11,6 +12,7 @@ public class ConversationActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_conversation);
+		getActionBar().setTitle("Conversation");
 	}
 
 	@Override
@@ -26,7 +28,17 @@ public class ConversationActivity extends Activity {
 		// automatically handle clicks on the Home/Up button, so long
 		// as you specify a parent activity in AndroidManifest.xml.
 		int id = item.getItemId();
-		if (id == R.id.action_settings) {
+		if (id == R.id.action_home) {
+			Intent intent = new Intent(this, HomeScreenActivity.class);
+			startActivity(intent);
+			return true;
+		}
+		else if (id == R.id.action_post) {
+			Intent intent = new Intent(this, NewPostActivity.class);
+			startActivity(intent);
+			return true;
+		}
+		else if (id == R.id.action_profile) {
 			return true;
 		}
 		return super.onOptionsItemSelected(item);

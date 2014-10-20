@@ -13,6 +13,7 @@ public class MessageActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_message);
+		getActionBar().setTitle("Message");
 	}
 
 	@Override
@@ -28,7 +29,17 @@ public class MessageActivity extends Activity {
 		// automatically handle clicks on the Home/Up button, so long
 		// as you specify a parent activity in AndroidManifest.xml.
 		int id = item.getItemId();
-		if (id == R.id.action_settings) {
+		if (id == R.id.action_home) {
+			Intent intent = new Intent(this, HomeScreenActivity.class);
+			startActivity(intent);
+			return true;
+		}
+		else if (id == R.id.action_post) {
+			Intent intent = new Intent(this, NewPostActivity.class);
+			startActivity(intent);
+			return true;
+		}
+		else if (id == R.id.action_profile) {
 			return true;
 		}
 		return super.onOptionsItemSelected(item);

@@ -3,9 +3,14 @@ package com.example.shopwithme;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.ContextMenu;
+import android.view.ContextMenu.ContextMenuInfo;
 import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
+
 
 public class HomeScreenActivity extends Activity {
 
@@ -13,7 +18,17 @@ public class HomeScreenActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_home_screen);
+		getActionBar().setTitle("Home");
+		
 	}
+	
+	@Override
+	public void onCreateContextMenu(ContextMenu menu, View v,
+	    ContextMenuInfo menuInfo) {
+	  MenuInflater inflater = getMenuInflater();
+	  inflater.inflate(R.menu.content_menu, menu);
+	  super.onCreateContextMenu(menu, v, menuInfo);
+	 }
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
@@ -28,7 +43,15 @@ public class HomeScreenActivity extends Activity {
 		// automatically handle clicks on the Home/Up button, so long
 		// as you specify a parent activity in AndroidManifest.xml.
 		int id = item.getItemId();
-		if (id == R.id.action_settings) {
+		if (id == R.id.action_home) {
+			return true;
+		}
+		else if (id == R.id.action_post) {
+			Intent intent = new Intent(this, NewPostActivity.class);
+			startActivity(intent);
+			return true;
+		}
+		else if (id == R.id.action_profile) {
 			return true;
 		}
 		return super.onOptionsItemSelected(item);
@@ -39,6 +62,7 @@ public class HomeScreenActivity extends Activity {
 		startActivity(intent);
 	}
 
+	/*
     public void MessageScreen(View view){
         Intent intent = new Intent(this, MessageActivity.class);
         startActivity(intent);
@@ -46,8 +70,9 @@ public class HomeScreenActivity extends Activity {
 
     public void ConversationScreen(View view){
         Intent intent = new Intent(this, ConversationActivity.class);
-        startActivity(intent);
-    }
+        startActivity(intent); 
+    }*/
+    
 }
 
 //What's next

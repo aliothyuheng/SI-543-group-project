@@ -12,6 +12,7 @@ public final class R {
         public static final int budget_array=0x7f060001;
         public static final int categories_array=0x7f060000;
         public static final int city_arrays=0x7f060002;
+        public static final int entries=0x7f060003;
     }
     public static final class attr {
     }
@@ -31,8 +32,8 @@ public final class R {
     }
     public static final class id {
         public static final int BudgetLabel=0x7f090008;
-        public static final int Category=0x7f09002a;
-        public static final int CategoryContainer=0x7f090029;
+        public static final int Category=0x7f090027;
+        public static final int CategoryContainer=0x7f090026;
         public static final int CatogoryBox_1=0x7f09000d;
         public static final int CatogoryBox_2=0x7f09000e;
         public static final int CatogoryBox_3=0x7f09000f;
@@ -40,49 +41,55 @@ public final class R {
         public static final int CatogoryLabel=0x7f09000c;
         public static final int Filter=0x7f090006;
         public static final int FilterPanel=0x7f090007;
-        public static final int ForgetPasswordButton=0x7f090022;
+        public static final int ForgetPasswordButton=0x7f09001f;
         public static final int LocationLabel=0x7f090011;
-        public static final int LoginButton=0x7f090020;
-        public static final int MessageSubmit=0x7f090027;
-        public static final int Password=0x7f09001e;
-        public static final int PasswordTextbox=0x7f09001f;
-        public static final int PostContainer_1=0x7f090014;
-        public static final int PostContainer_2=0x7f090016;
-        public static final int PostContainer_3=0x7f090018;
-        public static final int Post_1=0x7f090015;
-        public static final int Post_2=0x7f090017;
-        public static final int Post_3=0x7f090019;
+        public static final int LoginButton=0x7f09001d;
+        public static final int MessageSubmit=0x7f090024;
+        public static final int Password=0x7f09001b;
+        public static final int PasswordTextbox=0x7f09001c;
+        public static final int Post_1=0x7f090014;
+        public static final int Post_2=0x7f090015;
+        public static final int Post_3=0x7f090016;
         public static final int PriceBox_1=0x7f090009;
         public static final int PriceBox_2=0x7f09000a;
         public static final int PriceBox_3=0x7f09000b;
         public static final int ReplySubmit=0x7f090005;
-        public static final int SignUpButton=0x7f090021;
+        public static final int SignUpButton=0x7f09001e;
         public static final int SubmitFilterButton=0x7f090013;
-        public static final int UserName=0x7f09001c;
-        public static final int UserNameTextbox=0x7f09001d;
-        public static final int WelcomText=0x7f09001b;
-        public static final int action_home=0x7f090031;
-        public static final int action_post=0x7f090032;
-        public static final int action_profile=0x7f090033;
-        public static final int action_settings=0x7f090034;
-        public static final int btnSubmit=0x7f090030;
-        public static final int budget=0x7f09002b;
-        public static final int budgetSpinner=0x7f09002c;
+        public static final int UserName=0x7f090019;
+        public static final int UserNameTextbox=0x7f09001a;
+        public static final int WelcomText=0x7f090018;
+        public static final int action_home=0x7f090037;
+        public static final int action_message=0x7f090034;
+        public static final int action_post=0x7f090038;
+        public static final int action_poster_profile=0x7f090036;
+        public static final int action_profile=0x7f090039;
+        public static final int action_reply=0x7f090035;
+        public static final int action_settings=0x7f09003a;
+        public static final int btnSubmit=0x7f09002d;
+        public static final int budget=0x7f090028;
+        public static final int budgetSpinner=0x7f090029;
+        public static final int button1=0x7f090033;
+        public static final int container=0x7f09002e;
         public static final int conversationTitle=0x7f090000;
-        public static final int editLocation=0x7f09002e;
-        public static final int editPost=0x7f09002f;
-        public static final int filerButton=0x7f09001a;
-        public static final int location=0x7f09002d;
-        public static final int messageBox=0x7f090026;
-        public static final int messageTitle=0x7f090023;
+        public static final int editLocation=0x7f09002b;
+        public static final int editPost=0x7f09002c;
+        public static final int editText1=0x7f090030;
+        public static final int editText2=0x7f090031;
+        public static final int editText3=0x7f090032;
+        public static final int filerButton=0x7f090017;
+        public static final int imageView2=0x7f09002f;
+        public static final int location=0x7f09002a;
+        public static final int messageBox=0x7f090023;
+        public static final int messageTitle=0x7f090020;
         public static final int replyBox=0x7f090004;
         public static final int spinner1=0x7f090012;
-        public static final int textView1=0x7f090028;
-        public static final int userMaryMessage=0x7f090025;
+        public static final int textView1=0x7f090025;
+        public static final int userMaryMessage=0x7f090022;
         public static final int userMaryPost=0x7f090001;
         public static final int userNickReply=0x7f090002;
         public static final int userSarahReply=0x7f090003;
-        public static final int userSueMessage=0x7f090024;
+        public static final int userSueMessage=0x7f090021;
     }
     public static final class layout {
         public static final int activity_conversation=0x7f030000;
@@ -91,6 +98,8 @@ public final class R {
         public static final int activity_main=0x7f030003;
         public static final int activity_message=0x7f030004;
         public static final int activity_new_post=0x7f030005;
+        public static final int activity_profile=0x7f030006;
+        public static final int fragment_profile=0x7f030007;
     }
     public static final class menu {
         public static final int content_menu=0x7f080000;
@@ -100,6 +109,7 @@ public final class R {
         public static final int main=0x7f080004;
         public static final int message=0x7f080005;
         public static final int new_post=0x7f080006;
+        public static final int profile=0x7f080007;
     }
     public static final class string {
         public static final int $=0x7f050018;
@@ -133,6 +143,7 @@ public final class R {
         public static final int hello_world=0x7f050001;
         public static final int login=0x7f050008;
         public static final int music=0x7f05001e;
+        public static final int prompt=0x7f050029;
         public static final int sign_up=0x7f050009;
         public static final int souvenir=0x7f05001f;
         public static final int title_activity_conversation=0x7f050023;
@@ -140,6 +151,7 @@ public final class R {
         public static final int title_activity_home_screen=0x7f05000b;
         public static final int title_activity_message=0x7f050022;
         public static final int title_activity_new_post=0x7f050024;
+        public static final int title_activity_profile=0x7f050028;
         public static final int type_password=0x7f050007;
         public static final int type_username=0x7f050005;
     }

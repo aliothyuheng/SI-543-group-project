@@ -32,15 +32,14 @@ public class MessageActivity extends Activity {
 		if (id == R.id.action_home) {
 			Intent intent = new Intent(this, HomeScreenActivity.class);
 			startActivity(intent);
-			return true;
 		}
 		else if (id == R.id.action_post) {
 			Intent intent = new Intent(this, NewPostActivity.class);
 			startActivity(intent);
-			return true;
 		}
 		else if (id == R.id.action_profile) {
-			return true;
+			Intent intent = new Intent(this, ProfileActivity.class);
+			startActivity(intent);
 		}
 		return super.onOptionsItemSelected(item);
 	}

@@ -42,6 +42,10 @@
             android:name=".NewPostActivity"
             android:label="@string/title_activity_new_post" >
         </activity>
+        <activity
+            android:name=".ProfileActivity"
+            android:label="@string/title_activity_profile" >
+        </activity>
     </application>
 
 </manifest>

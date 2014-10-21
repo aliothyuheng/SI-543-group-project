@@ -9,7 +9,7 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
+import android.widget.TextView;
 
 
 public class HomeScreenActivity extends Activity {
@@ -19,16 +19,47 @@ public class HomeScreenActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_home_screen);
 		getActionBar().setTitle("Home");
+		TextView tv_1 = (TextView) findViewById(R.id.Post_1);
+	    registerForContextMenu(tv_1);
+	    TextView tv_2 = (TextView) findViewById(R.id.Post_2);
+	    registerForContextMenu(tv_2);
+	    TextView tv_3 = (TextView) findViewById(R.id.Post_3);
+	    registerForContextMenu(tv_3);
 		
 	}
 	
 	@Override
 	public void onCreateContextMenu(ContextMenu menu, View v,
-	    ContextMenuInfo menuInfo) {
-	  MenuInflater inflater = getMenuInflater();
-	  inflater.inflate(R.menu.content_menu, menu);
-	  super.onCreateContextMenu(menu, v, menuInfo);
-	 }
+			ContextMenuInfo menuInfo) {
+		MenuInflater inflater = getMenuInflater();
+		inflater.inflate(R.menu.content_menu, menu);
+		super.onCreateContextMenu(menu, v, menuInfo);
+	}
+	
+	@Override
+	public boolean onContextItemSelected(MenuItem item) {
+		int id = item.getItemId();
+		if (id == R.id.action_message) {
+			Intent intent = new Intent(this, MessageActivity.class);
+	        startActivity(intent);
+		}
+		else if (id == R.id.action_reply) {
+			Intent intent = new Intent(this, ConversationActivity.class);
+	        startActivity(intent);
+		}
+		else if (id == R.id.action_poster_profile) {
+			Intent intent = new Intent(this, ProfileActivity.class);
+	        startActivity(intent);
+		}
+		
+		return super.onContextItemSelected(item);
+	}
+
+
+
+	
+
+
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
@@ -52,7 +83,8 @@ public class HomeScreenActivity extends Activity {
 			return true;
 		}
 		else if (id == R.id.action_profile) {
-			return true;
+			Intent intent = new Intent(this, ProfileActivity.class);
+			startActivity(intent);
 		}
 		return super.onOptionsItemSelected(item);
 	}
@@ -62,16 +94,6 @@ public class HomeScreenActivity extends Activity {
 		startActivity(intent);
 	}
 
-	/*
-    public void MessageScreen(View view){
-        Intent intent = new Intent(this, MessageActivity.class);
-        startActivity(intent);
-    }
-
-    public void ConversationScreen(View view){
-        Intent intent = new Intent(this, ConversationActivity.class);
-        startActivity(intent); 
-    }*/
     
 }
 

@@ -1,24 +1,33 @@
 package com.example.shopwithme;
 
 import android.app.Activity;
+import android.app.ActionBar;
+import android.app.Fragment;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.view.ViewGroup;
+import android.os.Build;
 
-public class ConversationActivity extends Activity {
+public class ProfileActivity extends Activity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_conversation);
-		getActionBar().setTitle("Conversation");
+		setContentView(R.layout.activity_profile);
+		if (savedInstanceState == null) {
+			getFragmentManager().beginTransaction()
+					.add(R.id.container, new PlaceholderFragment()).commit();
+		}
 	}
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.conversation, menu);
+		getMenuInflater().inflate(R.menu.profile, menu);
 		return true;
 	}
 
@@ -31,18 +40,33 @@ public class ConversationActivity extends Activity {
 		if (id == R.id.action_home) {
 			Intent intent = new Intent(this, HomeScreenActivity.class);
 			startActivity(intent);
+			return true;
 		}
 		else if (id == R.id.action_post) {
 			Intent intent = new Intent(this, NewPostActivity.class);
 			startActivity(intent);
+			return true;
 		}
 		else if (id == R.id.action_profile) {
-			Intent intent = new Intent(this, ProfileActivity.class);
-			startActivity(intent);
+			return true;
 		}
 		return super.onOptionsItemSelected(item);
 	}
-	
-	// text from reply box gets put on screen when user submits it
-	// user can click on another user's name in order to go to their profile page
+
+	/**
+	 * A placeholder fragment containing a simple view.
+	 */
+	public static class PlaceholderFragment extends Fragment {
+
+		public PlaceholderFragment() {
+		}
+
+		@Override
+		public View onCreateView(LayoutInflater inflater, ViewGroup container,
+				Bundle savedInstanceState) {
+			View rootView = inflater.inflate(R.layout.fragment_profile,
+					container, false);
+			return rootView;
+		}
+	}
 }

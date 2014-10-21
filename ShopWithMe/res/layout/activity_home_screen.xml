@@ -1,75 +1,73 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.shopwithme.HomeScreenActivity" >
-    
-    
+ 	
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="375dp" >
 
-    <RelativeLayout
-        android:id="@+id/PostContainer_1"
-        android:layout_width="wrap_content"
-        android:layout_height="100dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="82dp" >
-
-        <TextView
-            android:id="@+id/Post_1"
+        <TableLayout
             android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:text="@string/Post_1" />
-       
-    </RelativeLayout>
+            android:layout_height="wrap_content"
+            android:paddingTop="25dp">
 
-    
-    <RelativeLayout
-        android:id="@+id/PostContainer_2"
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal">
+
+                <TextView
+            		android:id="@+id/Post_1"
+            		android:layout_width="match_parent"
+            		android:layout_height="50dp"
+            		android:text="@string/Post_1" /> 
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal">
+
+                <TextView
+            		android:id="@+id/Post_2"
+            		android:layout_width="match_parent"
+            		android:layout_height="50dp"
+            		android:text="@string/Post_2" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal">
+
+                <TextView
+            		android:id="@+id/Post_3"
+            		android:layout_width="match_parent"
+            		android:layout_height="50dp"
+            		android:text="@string/Post_3" />
+
+                
+            </TableRow>
+        
+
+        </TableLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/filerButton"
         android:layout_width="wrap_content"
-        android:layout_height="100dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_below="@+id/PostContainer_1" >
-            
-        <TextView
-            android:id="@+id/Post_2"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:text="@string/Post_2" />
-        
-        
-    </RelativeLayout>
- 
-    
-	<RelativeLayout
-        android:id="@+id/PostContainer_3"
-        android:layout_width="wrap_content"
-        android:layout_height="100dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_below="@+id/PostContainer_2" >     
-        
-        <TextView
-            android:id="@+id/Post_3"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:text="@string/Post_3" />
-        
-        
-    </RelativeLayout>
-
-	<Button
-	    android:id="@+id/filerButton"
-	    android:layout_width="wrap_content"
-	    android:layout_height="wrap_content"
-	    android:layout_alignEnd="@+id/PostContainer_3"
-	    android:layout_alignParentBottom="true"
-	    android:layout_alignParentEnd="true"
-	    android:onClick="Filter"
-	    android:text="@string/Filter" />
-
-</RelativeLayout>
+        android:layout_height="wrap_content"
+        android:onClick="Filter"
+        android:text="@string/Filter" />
+	
+</LinearLayout>

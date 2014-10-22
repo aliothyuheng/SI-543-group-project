@@ -64,12 +64,15 @@
 
     <string name="title_activity_profile">ProfileActivity</string>
     <string name="prompt">Budget</string>
-	<string-array name="entries">
-	    <item>Budget</item>
-	    <item>$</item>
-	    <item>$$</item>
-	    <item>$$$</item>
-	    <item>$$$$</item>
-	</string-array>
+
+    <string-array name="entries">
+        <item>Budget</item>
+        <item>$</item>
+        <item>$$</item>
+        <item>$$$</item>
+        <item>$$$$</item>
+    </string-array>
+
+    <string name="title_activity_display">DisplayActivity</string>
 
 </resources>

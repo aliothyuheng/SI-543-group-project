@@ -43,7 +43,7 @@ public class NewPostActivity extends Activity {
 		return super.onOptionsItemSelected(item);
 	}
 	
-	public void MessageScreen(View view) {
+	public void PosttoHomeScreen(View view) {
 		Intent intent = new Intent(this, HomeScreenActivity.class);
 		startActivity(intent);
 	}

@@ -6,21 +6,7 @@
     android:orientation="vertical"
     tools:context="com.example.shopwithme.NewPostActivity" >
 
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="New Post" 
-        android:textSize="40sp"
-        android:layout_marginBottom="10dp"/>
-    
-    <LinearLayout 
-        android:id="@+id/CategoryContainer"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:orientation="vertical">
-    
-	    <TextView 
+   	    <TextView 
 	        android:id="@+id/Category"
 	        android:layout_width="match_parent"
 	        android:layout_height="wrap_content"
@@ -80,7 +66,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Submit" 
-        android:onClick="MessageScreen"/>
+        android:onClick="PosttoHomeScreen"/>
         
-     </LinearLayout>
+     
 </LinearLayout>

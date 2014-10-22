@@ -5,21 +5,13 @@
     android:gravity="center_horizontal"
     android:orientation="vertical"
     tools:context="com.example.shopwithme.ConversationActivity" >
-
-    <TextView
-        android:id="@+id/conversationTitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Conversation" 
-        android:textSize="30sp"
-        android:layout_marginBottom="10dp"/>
-    
+   
     <TextView 
         android:id="@+id/userMaryPost"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Mary: Goin to shop for shoes. Anyone want to join?"
-        android:textSize="20sp"
+        android:textSize="25sp"
         />
     
     <TextView 
@@ -28,6 +20,7 @@
         android:layout_height="wrap_content"
         android:text="Nick: Yes! What time and where?"
         android:textSize="20sp"
+        android:layout_marginTop="20dp"
         />
     
     <TextView 

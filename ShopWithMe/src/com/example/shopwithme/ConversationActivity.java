@@ -3,8 +3,13 @@ package com.example.shopwithme;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.ContextMenu;
 import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
+import android.view.ContextMenu.ContextMenuInfo;
+import android.widget.TextView;
 
 public class ConversationActivity extends Activity {
 
@@ -13,6 +18,35 @@ public class ConversationActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_conversation);
 		getActionBar().setTitle("Conversation");
+		TextView tv_1 = (TextView) findViewById(R.id.marys_post);
+	    registerForContextMenu(tv_1);
+	    TextView tv_2 = (TextView) findViewById(R.id.nicks_reply);
+	    registerForContextMenu(tv_2);
+	    TextView tv_3 = (TextView) findViewById(R.id.sarahs_reply);
+	    registerForContextMenu(tv_3);
+	}
+	
+	@Override
+	public void onCreateContextMenu(ContextMenu menu, View v,
+			ContextMenuInfo menuInfo) {
+		MenuInflater inflater = getMenuInflater();
+		inflater.inflate(R.menu.conversation_content_menu, menu);
+		super.onCreateContextMenu(menu, v, menuInfo);
+	}
+	
+	@Override
+	public boolean onContextItemSelected(MenuItem item) {
+		int id = item.getItemId();
+		if (id == R.id.action_message) {
+			Intent intent = new Intent(this, MessageActivity.class);
+	        startActivity(intent);
+		}
+		else if (id == R.id.action_poster_profile) {
+			Intent intent = new Intent(this, DisplayActivity.class);
+	        startActivity(intent);
+		}
+		
+		return super.onContextItemSelected(item);
 	}
 
 	@Override

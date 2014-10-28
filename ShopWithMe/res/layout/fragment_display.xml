@@ -19,46 +19,54 @@
         android:layout_height="110dp"
         android:src="@drawable/sue" />
     	
-    <EditText
+    <TextView
         android:id="@+id/editText1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="15"
-        android:hint="Sue" >
+        android:text="Name: Sue" 
+        android:textSize="20sp"
+        android:layout_marginTop="20dp">
         
         <requestFocus />
-    </EditText>
+    </TextView>
     
-    <EditText
+    <TextView
         android:id="@+id/editText2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="15"
-        android:hint="Ann Arbor" >
+        android:text="Location: Ann Arbor" 
+        android:textSize="20sp"
+        android:layout_marginTop="20dp">
         <!-- TODO: Add Spinner for Location (create three options)-->
         <requestFocus />
         
-    </EditText>
+    </TextView>
     
-    <EditText
+    <TextView
         android:id="@+id/editText3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Food" >
+        android:text="Shopping Interests: Food and Shoes"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp" >
         
         <requestFocus />
-    </EditText>
+    </TextView>
 
-    <EditText
+    <TextView
         android:id="@+id/editText4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="$$$" >
+        android:text="Shopping Budget: $$$" 
+        android:textSize="20sp"
+        android:layout_marginTop="20dp">
         
         <requestFocus />
-    </EditText>
+    </TextView>
 
     <!--  <Button
         android:id="@+id/button1"

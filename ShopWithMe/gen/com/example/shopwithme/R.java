@@ -73,12 +73,12 @@ public final class R {
         public static final int container=0x7f090005;
         public static final int editLocation=0x7f090029;
         public static final int editPost=0x7f09002a;
-        public static final int editText1=0x7f09002e;
-        public static final int editText2=0x7f09002f;
-        public static final int editText3=0x7f090030;
-        public static final int editText4=0x7f090031;
+        public static final int editText1=0x7f09002d;
+        public static final int editText2=0x7f09002e;
+        public static final int editText3=0x7f09002f;
+        public static final int editText4=0x7f090030;
         public static final int filerButton=0x7f090017;
-        public static final int imageView1=0x7f09002d;
+        public static final int imageView1=0x7f09002c;
         public static final int imageView2=0x7f090032;
         public static final int location=0x7f090028;
         public static final int marys_post=0x7f090000;
@@ -88,7 +88,7 @@ public final class R {
         public static final int replyBox=0x7f090003;
         public static final int sarahs_reply=0x7f090002;
         public static final int spinner1=0x7f090012;
-        public static final int textView1=0x7f09002c;
+        public static final int textView1=0x7f090031;
         public static final int userMaryMessage=0x7f090022;
         public static final int userSueMessage=0x7f090021;
     }

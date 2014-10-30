@@ -1,0 +1,82 @@
+<!-- Michael Collins -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <!-- <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:text="User Profile"
+    	android:textAppearance="?android:attr/textAppearanceLarge" /> -->
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="104dp"
+        android:layout_height="110dp"
+        android:src="@drawable/sue" 
+        android:layout_marginTop="20dp"/>
+    	
+    <TextView
+        android:id="@+id/editText1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="15"
+        android:text="Name: Sue" 
+        android:textSize="20sp"
+        android:layout_marginTop="20dp">
+        
+        <requestFocus />
+    </TextView>
+    
+    <TextView
+        android:id="@+id/editText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="15"
+        android:text="Location: Ann Arbor" 
+        android:textSize="20sp"
+        android:layout_marginTop="20dp">
+        <!-- TODO: Add Spinner for Location (create three options)-->
+        <requestFocus />
+        
+    </TextView>
+    
+    <TextView
+        android:id="@+id/editText3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:text="Shopping Interests: Food and Shoes"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp" >
+        
+        <requestFocus />
+    </TextView>
+
+    <TextView
+        android:id="@+id/editText4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:text="Shopping Budget: $$$" 
+        android:textSize="20sp"
+        android:layout_marginTop="20dp">
+        
+        <requestFocus />
+    </TextView>
+
+    <!--  <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+    	android:onClick="saveInfo"
+    	android:text="Save" /> -->
+
+   
+
+</LinearLayout>
+<!-- From: file:/F:/543/ShopWithMe/app/src/main/res/layout/fragment_display.xml -->

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- From: file:/F:/543/ShopWithMe/app/src/main/res/values/strings.xml -->
+    <eat-comment />
+
+    <string-array name="budget_array">
+        <item>$</item>
+        <item>$$</item>
+        <item>$$$</item>
+    </string-array>
+    <string-array name="categories_array">
+        <item>Clothing</item>
+        <item>Food</item>
+        <item>Music</item>
+        <item>Shoes</item>
+    </string-array>
+    <string-array name="city_arrays">
+        <item>Ann Arbor</item>
+        <item>New York</item>
+        <item>Chicago</item>
+        <item>Los Angeles</item>
+    </string-array>
+    <string-array name="entries">
+        <item>Budget</item>
+        <item>$</item>
+        <item>$$</item>
+        <item>$$$</item>
+        <item>$$$$</item>
+    </string-array>
+    <!-- From: file:/F:/543/ShopWithMe/app/src/main/res/values/dimens.xml -->
+    <eat-comment />
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <!-- From: file:/F:/543/ShopWithMe/app/src/main/res/values/strings.xml -->
+    <eat-comment />
+
+    <string name="$">$</string>
+    <string name="$$">$$</string>
+    <string name="$$$">$$$</string>
+    <string name="Budget">Budget</string>
+    <string name="Catoroty">Category</string>
+    <string name="Filter">Filter</string>
+    <string name="Home">Home</string>
+    <string name="Location">Location</string>
+    <string name="Message">Message to the Poster</string>
+    <string name="Password">Password</string>
+    <string name="Post">Post</string>
+    <string name="Post_1">Mary:Goin to shop for shoes. Anyone want to join?</string>
+    <string name="Post_2">Sue:I need to find some good food. Any suggestions?</string>
+    <string name="Post_3">Susan: Anyone want to shop for clothes?</string>
+    <string name="Poster_profile">View poster profile</string>
+    <string name="Profile">Profile</string>
+    <string name="Reply">Reply to this Post</string>
+    <string name="Submit">Submit</string>
+    <string name="UserName">UserName</string>
+    <string name="Welcome">Welcome</string>
+    <string name="action_settings">Settings</string>
+    <string name="app_name">ShopWithMe</string>
+    <string name="budget_prompt">Budget</string>
+    <string name="categories_prompt">Categories</string>
+    <string name="city_prompt">Choose a city</string>
+    <string name="clothing">Clothing</string>
+    <string name="food">Food</string>
+    <string name="forget_password">forget password</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="login">login</string>
+    <string name="marys_post">Mary: Goin to shop for shoes. Anyone want to join?</string>
+    <string name="music">Music</string>
+    <string name="nicks_reply">Nick: Yes! What time and where?</string>
+    <string name="prompt">Budget</string>
+    <string name="sarahs_reply">Sarah: I would like to go too!</string>
+    <string name="sign_up">sign up</string>
+    <string name="souvenir">Souvenir</string>
+    <string name="title_activity_conversation">ConversationActivity</string>
+    <string name="title_activity_display">DisplayActivity</string>
+    <string name="title_activity_filter">FilterActivity</string>
+    <string name="title_activity_home_screen">HomeScreenActivity</string>
+    <string name="title_activity_message">MessageActivity</string>
+    <string name="title_activity_new_post">NewPostActivity</string>
+    <string name="title_activity_profile">ProfileActivity</string>
+    <string name="type_password">type your password</string>
+    <string name="type_username">type your username</string>
+    <!-- From: file:/F:/543/ShopWithMe/app/src/main/res/values/styles.xml -->
+    <eat-comment />
+
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+</resources>

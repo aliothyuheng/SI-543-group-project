@@ -1,0 +1,52 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.example.shopwithme.ConversationActivity" >
+   
+    <TextView 
+        android:id="@+id/marys_post"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/marys_post"
+        android:textSize="25sp"
+        />
+    
+    <TextView 
+        android:id="@+id/nicks_reply"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/nicks_reply"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        />
+    
+    <TextView 
+        android:id="@+id/sarahs_reply"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sarahs_reply"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        />
+    
+    <EditText 
+        android:id="@+id/replyBox"
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:hint="Reply here..."
+    	android:textSize="20sp"
+    	android:imeOptions="actionDone"
+    	android:layout_marginTop="20dp"
+    	/>
+    
+    <Button 
+        android:id="@+id/ReplySubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Submit" 
+        />
+</LinearLayout>
+<!-- From: file:/F:/543/ShopWithMe/app/src/main/res/layout/activity_conversation.xml -->

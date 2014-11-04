@@ -26,6 +26,10 @@ public final class R {
         public static final int images=0x7f020002;
         public static final int reply=0x7f020003;
         public static final int sue=0x7f020004;
+        public static final int user_1=0x7f020005;
+        public static final int user_2=0x7f020006;
+        public static final int user_3=0x7f020007;
+        public static final int user_4=0x7f020008;
     }
     public static final class id {
         public static final int BudgetLabel=0x7f090008;

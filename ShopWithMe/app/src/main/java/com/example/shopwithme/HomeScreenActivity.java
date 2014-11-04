@@ -2,11 +2,14 @@ package com.example.shopwithme;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.res.Resources;
+import android.media.Image;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.PopupMenu;
 
 public class HomeScreenActivity extends Activity {
@@ -20,11 +23,15 @@ public class HomeScreenActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_screen);
         getActionBar().setTitle("Home");
+
+        //set up button listener for all the image button. If click on the image button,
+        //a pop up menu will display
         button_1 = (ImageButton) findViewById(R.id.reply_1);
         button_2 = (ImageButton) findViewById(R.id.reply_2);
         button_3 = (ImageButton) findViewById(R.id.reply_3);
         button_4 = (ImageButton) findViewById(R.id.reply_4);
         button_5 = (ImageButton) findViewById(R.id.reply_5);
+        //call the setup popup menu function for the button
         setPopup(button_1);
         setPopup(button_2);
         setPopup(button_3);
@@ -65,11 +72,12 @@ public class HomeScreenActivity extends Activity {
 		return super.onOptionsItemSelected(item);
 	}
 
+    //if user click on the image on the screen, it will switch to the poster's profile
     public void viewProfile(View view){
         Intent intent = new Intent(this, DisplayActivity.class);
+
         startActivity(intent);
     }
-
 
     public void setPopup(View view){
         //setup popup menu for the button
@@ -96,6 +104,5 @@ public class HomeScreenActivity extends Activity {
             }
         });
     }
-
 }
 

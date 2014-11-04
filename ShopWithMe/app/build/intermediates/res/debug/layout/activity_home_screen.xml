@@ -39,7 +39,7 @@
                 <RelativeLayout>
                     <ImageView
                         android:id="@+id/user_image"
-                        android:src="@drawable/images"
+                        android:src="@drawable/user_1"
                         android:layout_marginLeft="10dp"
                         android:layout_width="40dp"
                         android:layout_height="40dp"
@@ -91,7 +91,7 @@
                 <RelativeLayout>
                     <ImageView
                         android:id="@id/user_image"
-                        android:src="@drawable/images"
+                        android:src="@drawable/user_2"
                         android:layout_marginLeft="10dp"
                         android:layout_width="40dp"
                         android:layout_height="40dp"
@@ -143,7 +143,7 @@
                 <RelativeLayout>
                     <ImageView
                         android:id="@id/user_image"
-                        android:src="@drawable/images"
+                        android:src="@drawable/user_3"
                         android:layout_marginLeft="10dp"
                         android:layout_width="40dp"
                         android:layout_height="40dp"
@@ -196,7 +196,7 @@
                 <RelativeLayout>
                     <ImageView
                         android:id="@id/user_image"
-                        android:src="@drawable/images"
+                        android:src="@drawable/user_4"
                         android:layout_marginLeft="10dp"
                         android:layout_width="40dp"
                         android:layout_height="40dp"
@@ -249,7 +249,7 @@
                 <RelativeLayout>
                     <ImageView
                         android:id="@id/user_image"
-                        android:src="@drawable/images"
+                        android:src="@drawable/user_4"
                         android:layout_marginLeft="10dp"
                         android:layout_width="40dp"
                         android:layout_height="40dp"

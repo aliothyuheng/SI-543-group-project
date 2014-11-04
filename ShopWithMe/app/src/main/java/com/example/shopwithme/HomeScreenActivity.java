@@ -3,62 +3,34 @@ package com.example.shopwithme;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.ContextMenu;
-import android.view.ContextMenu.ContextMenuInfo;
 import android.view.Menu;
-import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.TextView;
-
+import android.widget.ImageButton;
+import android.widget.PopupMenu;
 
 public class HomeScreenActivity extends Activity {
+    ImageButton button_1;
+    ImageButton button_2;
+    ImageButton button_3;
+    ImageButton button_4;
+    ImageButton button_5;
 
-	@Override
 	protected void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_home_screen);
-		getActionBar().setTitle("Home");
-		TextView tv_1 = (TextView) findViewById(R.id.Post_1);
-	    registerForContextMenu(tv_1);
-	    TextView tv_2 = (TextView) findViewById(R.id.Post_2);
-	    registerForContextMenu(tv_2);
-	    TextView tv_3 = (TextView) findViewById(R.id.Post_3);
-	    registerForContextMenu(tv_3);
-		
-	}
-	
-	@Override
-	public void onCreateContextMenu(ContextMenu menu, View v,
-			ContextMenuInfo menuInfo) {
-		MenuInflater inflater = getMenuInflater();
-		inflater.inflate(R.menu.content_menu, menu);
-		super.onCreateContextMenu(menu, v, menuInfo);
-	}
-	
-	@Override
-	public boolean onContextItemSelected(MenuItem item) {
-		int id = item.getItemId();
-		if (id == R.id.action_message) {
-			Intent intent = new Intent(this, MessageActivity.class);
-	        startActivity(intent);
-		}
-		else if (id == R.id.action_reply) {
-			Intent intent = new Intent(this, ConversationActivity.class);
-	        startActivity(intent);
-		}
-		else if (id == R.id.action_poster_profile) {
-			Intent intent = new Intent(this, DisplayActivity.class);
-	        startActivity(intent);
-		}
-		
-		return super.onContextItemSelected(item);
-	}
-
-
-
-	
-
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_home_screen);
+        getActionBar().setTitle("Home");
+        button_1 = (ImageButton) findViewById(R.id.reply_1);
+        button_2 = (ImageButton) findViewById(R.id.reply_2);
+        button_3 = (ImageButton) findViewById(R.id.reply_3);
+        button_4 = (ImageButton) findViewById(R.id.reply_4);
+        button_5 = (ImageButton) findViewById(R.id.reply_5);
+        setPopup(button_1);
+        setPopup(button_2);
+        setPopup(button_3);
+        setPopup(button_4);
+        setPopup(button_5);
+    }
 
 
 	@Override
@@ -86,20 +58,44 @@ public class HomeScreenActivity extends Activity {
 			Intent intent = new Intent(this, ProfileActivity.class);
 			startActivity(intent);
 		}
+        else if (id == R.id.action_filter) {
+            Intent intent = new Intent(this, FilterActivity.class);
+            startActivity(intent);
+        }
 		return super.onOptionsItemSelected(item);
 	}
-	
-	public void Filter(View view) {
-		Intent intent = new Intent(this, FilterActivity.class);
-		startActivity(intent);
-	}
 
-    
+    public void viewProfile(View view){
+        Intent intent = new Intent(this, DisplayActivity.class);
+        startActivity(intent);
+    }
+
+
+    public void setPopup(View view){
+        //setup popup menu for the button
+        view.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                PopupMenu popup = new PopupMenu(HomeScreenActivity.this, view);
+                popup.getMenuInflater().inflate(R.menu.content_menu, popup.getMenu());
+                popup.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener(){
+                    //setup onclick listener for the pop up menu
+                    public boolean onMenuItemClick(MenuItem item) {
+                        int id = item.getItemId();
+                        if (id == R.id.action_message) {
+                            Intent intent = new Intent(HomeScreenActivity.this, MessageActivity.class);
+                            startActivity(intent);
+                        } else if (id == R.id.action_reply) {
+                            Intent intent = new Intent(HomeScreenActivity.this, ConversationActivity.class);
+                            startActivity(intent);
+                        }
+                        return true;
+                    }
+                });
+                popup.show();
+            }
+        });
+    }
+
 }
 
-//What's next
-//1. When click the "reply" under each post, it will go to the reply screen.
-//2. When click the "message" under each post, it will go to the message screen and start chatting.
-//3. When click the "profile" under each post, it will go to the user profile screen and view the profile of the poster.
-//4. When click the "post" at the bottom, it will go to the new post screen.
-//5. When click the "profile" at the bottom, it will go to the user's profile screen. 

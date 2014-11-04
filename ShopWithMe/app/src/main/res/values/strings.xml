@@ -14,13 +14,10 @@
     <string name="forget_password">forget password</string>
     <string name="title_activity_home_screen">HomeScreenActivity</string>
     <string name="Home">Home</string>
-    <string name="Post_1">Mary:Goin to shop for shoes. Anyone want to join?</string>
     <string name="Message">Message to the Poster</string>
     <string name="Reply">Reply to this Post</string>
     <string name="Poster_profile">View poster profile</string>
     <string name="Profile">Profile</string>
-    <string name="Post_2">Sue:I need to find some good food. Any suggestions?</string>
-    <string name="Post_3">Susan: Anyone want to shop for clothes?</string>
     <string name="Post">Post</string>
     <string name="Filter">Filter</string>
     <string name="title_activity_filter">FilterActivity</string>

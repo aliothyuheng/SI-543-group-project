@@ -38,29 +38,25 @@
 
                 <RelativeLayout>
                     <ImageView
-                        android:id="@+id/user_image"
+                        android:id="@+id/user_image_1"
                         android:src="@drawable/user_1"
                         android:layout_marginLeft="10dp"
                         android:layout_width="40dp"
-                        android:layout_height="40dp"
-                        android:onClick="viewProfile"/>
+                        android:layout_height="40dp" />
 
                     <RelativeLayout
                         android:layout_width="250dp"
                         android:layout_height="80dp"
                         android:background="#FFFFCC"
-                        android:layout_toRightOf="@id/user_image"
+                        android:layout_toRightOf="@id/user_image_1"
                         android:layout_marginLeft="20dp">
 
                         <TextView
                             android:id="@+id/name_1"
                             android:layout_width="40dp"
                             android:layout_height="15dp"
-                            android:autoLink="all"
-                            android:linksClickable="true"
                             android:textColor="#0066FF"
                             android:textStyle="italic"
-                            android:onClick="viewProfile"
                             android:text="Sue"/>
 
                         <TextView
@@ -90,29 +86,25 @@
 
                 <RelativeLayout>
                     <ImageView
-                        android:id="@id/user_image"
+                        android:id="@+id/user_image_2"
                         android:src="@drawable/user_2"
                         android:layout_marginLeft="10dp"
                         android:layout_width="40dp"
-                        android:layout_height="40dp"
-                        android:onClick="viewProfile"/>
+                        android:layout_height="40dp" />
 
                     <RelativeLayout
                         android:layout_width="250dp"
                         android:layout_height="80dp"
                         android:background="#FFFFCC"
-                        android:layout_toRightOf="@id/user_image"
+                        android:layout_toRightOf="@id/user_image_2"
                         android:layout_marginLeft="20dp">
 
                         <TextView
                             android:id="@+id/name_2"
                             android:layout_width="40dp"
                             android:layout_height="15dp"
-                            android:autoLink="all"
-                            android:linksClickable="true"
                             android:textColor="#0066FF"
                             android:textStyle="italic"
-                            android:onClick="viewProfile"
                             android:text="Nick"/>
 
                         <TextView
@@ -142,18 +134,17 @@
 
                 <RelativeLayout>
                     <ImageView
-                        android:id="@id/user_image"
+                        android:id="@+id/user_image_3"
                         android:src="@drawable/user_3"
                         android:layout_marginLeft="10dp"
                         android:layout_width="40dp"
-                        android:layout_height="40dp"
-                        android:onClick="viewProfile"/>
+                        android:layout_height="40dp" />
 
                     <RelativeLayout
                         android:layout_width="250dp"
                         android:layout_height="80dp"
                         android:background="#FFFFCC"
-                        android:layout_toRightOf="@id/user_image"
+                        android:layout_toRightOf="@id/user_image_3"
                         android:layout_marginLeft="20dp">
 
 
@@ -161,11 +152,8 @@
                         android:id="@+id/name_3"
                         android:layout_width="40dp"
                         android:layout_height="15dp"
-                        android:autoLink="all"
-                        android:linksClickable="true"
                         android:textColor="#0066FF"
                         android:textStyle="italic"
-                        android:onClick="viewProfile"
                         android:text="Mary"/>
 
                     <TextView
@@ -195,18 +183,17 @@
 
                 <RelativeLayout>
                     <ImageView
-                        android:id="@id/user_image"
+                        android:id="@+id/user_image_4"
                         android:src="@drawable/user_4"
                         android:layout_marginLeft="10dp"
                         android:layout_width="40dp"
-                        android:layout_height="40dp"
-                        android:onClick="viewProfile" />
+                        android:layout_height="40dp" />
 
                     <RelativeLayout
                         android:layout_width="250dp"
                         android:layout_height="80dp"
                         android:background="#FFFFCC"
-                        android:layout_toRightOf="@id/user_image"
+                        android:layout_toRightOf="@id/user_image_4"
                         android:layout_marginLeft="20dp">
 
 
@@ -214,8 +201,6 @@
                             android:id="@+id/name_4"
                             android:layout_width="40dp"
                             android:layout_height="15dp"
-                            android:autoLink="all"
-                            android:linksClickable="true"
                             android:textColor="#0066FF"
                             android:textStyle="italic"
                             android:text="Jason"/>
@@ -248,30 +233,26 @@
 
                 <RelativeLayout>
                     <ImageView
-                        android:id="@id/user_image"
-                        android:src="@drawable/user_4"
+                        android:id="@+id/user_image_5"
+                        android:src="@drawable/user_5"
                         android:layout_marginLeft="10dp"
                         android:layout_width="40dp"
-                        android:layout_height="40dp"
-                        android:onClick="viewProfile"/>
+                        android:layout_height="40dp"/>
 
                     <RelativeLayout
                         android:layout_width="250dp"
                         android:layout_height="80dp"
                         android:background="#FFFFCC"
-                        android:layout_toRightOf="@id/user_image"
+                        android:layout_toRightOf="@id/user_image_5"
                         android:layout_marginLeft="20dp">
 
                         <TextView
                             android:id="@+id/name_5"
                             android:layout_width="40dp"
                             android:layout_height="15dp"
-                            android:autoLink="all"
-                            android:linksClickable="true"
                             android:textColor="#0066FF"
                             android:textStyle="italic"
-                            android:onClick="viewProfile"
-                            android:text="Nick"/>
+                            android:text="Mike"/>
 
                         <TextView
                             android:id="@+id/post_5"

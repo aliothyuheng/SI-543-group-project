@@ -42,7 +42,7 @@ public class ConversationActivity extends Activity {
 	        startActivity(intent);
 		}
 		else if (id == R.id.action_poster_profile) {
-			Intent intent = new Intent(this, DisplayActivity.class);
+			Intent intent = new Intent(this, Profile_display.class);
 	        startActivity(intent);
 		}
 		

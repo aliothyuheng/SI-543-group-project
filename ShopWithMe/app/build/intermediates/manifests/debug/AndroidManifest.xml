@@ -50,6 +50,10 @@
             android:name="com.example.shopwithme.DisplayActivity"
             android:label="@string/title_activity_display" >
         </activity>
+        <activity
+            android:name="com.example.shopwithme.Profile_display"
+            android:label="@string/title_activity_profile_display" >
+        </activity>
     </application>
 
 </manifest>

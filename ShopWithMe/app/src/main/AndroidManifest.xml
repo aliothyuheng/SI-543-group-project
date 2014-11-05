@@ -50,6 +50,10 @@
             android:name=".DisplayActivity"
             android:label="@string/title_activity_display" >
         </activity>
+        <activity
+            android:name=".Profile_display"
+            android:label="@string/title_activity_profile_display" >
+        </activity>
     </application>
 
 </manifest>

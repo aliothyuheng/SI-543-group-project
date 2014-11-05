@@ -37,11 +37,6 @@
                 qualifiers=""
                 type="layout" />
             <file
-                name="activity_display"
-                path="F:\543\ShopWithMe\app\src\main\res\layout\activity_display.xml"
-                qualifiers=""
-                type="layout" />
-            <file
                 name="activity_filter"
                 path="F:\543\ShopWithMe\app\src\main\res\layout\activity_filter.xml"
                 qualifiers=""
@@ -72,11 +67,6 @@
                 qualifiers=""
                 type="layout" />
             <file
-                name="fragment_display"
-                path="F:\543\ShopWithMe\app\src\main\res\layout\fragment_display.xml"
-                qualifiers=""
-                type="layout" />
-            <file
                 name="fragment_profile"
                 path="F:\543\ShopWithMe\app\src\main\res\layout\fragment_profile.xml"
                 qualifiers=""
@@ -94,11 +84,6 @@
             <file
                 name="conversation_content_menu"
                 path="F:\543\ShopWithMe\app\src\main\res\menu\conversation_content_menu.xml"
-                qualifiers=""
-                type="menu" />
-            <file
-                name="display"
-                path="F:\543\ShopWithMe\app\src\main\res\menu\display.xml"
                 qualifiers=""
                 type="menu" />
             <file
@@ -146,8 +131,6 @@
                 </string>
                 <string name="action_settings" >Settings
                 </string>
-                <string name="Welcome" >Welcome
-                </string>
 
                 <string-array name="categories_array" >
                     <item>
@@ -164,6 +147,8 @@ Shoes
                     </item>
                 </string-array>
 
+                <string name="Welcome" >Welcome
+                </string>
                 <string name="Post" >Post
                 </string>
                 <string name="Message" >Message to the Poster
@@ -174,9 +159,9 @@ Shoes
                 </string>
                 <string name="title_activity_profile" >ProfileActivity
                 </string>
-                <string name="souvenir" >Souvenir
-                </string>
                 <string name="food" >Food
+                </string>
+                <string name="souvenir" >Souvenir
                 </string>
                 <string name="$$$" >$$$
                 </string>
@@ -202,9 +187,9 @@ Shoes
                 </string>
                 <string name="Profile" >Profile
                 </string>
-                <string name="prompt" >Budget
-                </string>
                 <string name="title_activity_home_screen" >HomeScreenActivity
+                </string>
+                <string name="prompt" >Budget
                 </string>
 
                 <string-array name="budget_array" >
@@ -266,29 +251,31 @@ $$$$
                 </string>
                 <string name="Reply" >Reply to this Post
                 </string>
-                <string name="sign_up" >sign up
-                </string>
                 <string name="title_activity_conversation" >ConversationActivity
+                </string>
+                <string name="sign_up" >sign up
                 </string>
                 <string name="title_activity_new_post" >NewPostActivity
                 </string>
-                <string name="sarahs_reply" >Sarah: I would like to go too!
+                <string name="Submit" >Submit
                 </string>
                 <string name="categories_prompt" >Categories
                 </string>
-                <string name="Submit" >Submit
+                <string name="sarahs_reply" >Sarah: I would like to go too!
                 </string>
                 <string name="clothing" >Clothing
                 </string>
+                <string name="Home" >Home
+                </string>
                 <string name="app_name" >ShopWithMe
                 </string>
-                <string name="Home" >Home
+                <string name="title_activity_profile_display" >Profile_display
                 </string>
                 <string name="type_password" >type your password
                 </string>
-                <string name="nicks_reply" >Nick: Yes! What time and where?
-                </string>
                 <string name="Filter" >Filter
+                </string>
+                <string name="nicks_reply" >Nick: Yes! What time and where?
                 </string>
             </file>
             <file
@@ -347,11 +334,6 @@ $$$$
                 qualifiers=""
                 type="drawable" />
             <file
-                name="images"
-                path="F:\543\ShopWithMe\app\src\main\res\drawable\images.jpg"
-                qualifiers=""
-                type="drawable" />
-            <file
                 name="reply"
                 path="F:\543\ShopWithMe\app\src\main\res\drawable\reply.jpg"
                 qualifiers=""
@@ -376,6 +358,21 @@ $$$$
                 path="F:\543\ShopWithMe\app\src\main\res\drawable\user_3.png"
                 qualifiers=""
                 type="drawable" />
+            <file
+                name="user_5"
+                path="F:\543\ShopWithMe\app\src\main\res\drawable\user_5.jpg"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="profile_display"
+                path="F:\543\ShopWithMe\app\src\main\res\menu\profile_display.xml"
+                qualifiers=""
+                type="menu" />
+            <file
+                name="activity_profile_display"
+                path="F:\543\ShopWithMe\app\src\main\res\layout\activity_profile_display.xml"
+                qualifiers=""
+                type="layout" />
         </source>
         <source path="F:\543\ShopWithMe\app\build\generated\res\rs\debug" />
         <source path="F:\543\ShopWithMe\app\build\generated\res\generated\debug" />

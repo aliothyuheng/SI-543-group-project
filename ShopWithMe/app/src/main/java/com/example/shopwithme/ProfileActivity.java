@@ -11,6 +11,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.os.Build;
+import android.widget.TextView;
 
 public class ProfileActivity extends Activity {
 
@@ -18,7 +19,8 @@ public class ProfileActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_profile);
-        getActionBar().setTitle("Profile");
+
+
 		if (savedInstanceState == null) {
 			getFragmentManager().beginTransaction()
 					.add(R.id.container, new PlaceholderFragment()).commit();
@@ -54,10 +56,10 @@ public class ProfileActivity extends Activity {
 		return super.onOptionsItemSelected(item);
 	}
 	
-	public void saveInfo(View view){
-		Intent intent = new Intent(this, DisplayActivity.class);
-		startActivity(intent);
-	}
+	//public void saveInfo(View view){
+		//Intent intent = new Intent(this, Profile_display.class);
+		//startActivity(intent);
+	//}
 
 	/**
 	 * A placeholder fragment containing a simple view.

@@ -3,14 +3,15 @@ package com.example.shopwithme;
 import android.app.Activity;
 import android.content.Intent;
 import android.content.res.Resources;
+import android.graphics.drawable.Drawable;
 import android.media.Image;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
-import android.widget.ImageView;
 import android.widget.PopupMenu;
+import android.widget.TextView;
 
 public class HomeScreenActivity extends Activity {
     ImageButton button_1;
@@ -18,6 +19,11 @@ public class HomeScreenActivity extends Activity {
     ImageButton button_3;
     ImageButton button_4;
     ImageButton button_5;
+    TextView tx_1;
+    TextView tx_2;
+    TextView tx_3;
+    TextView tx_4;
+    TextView tx_5;
 
 	protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,12 +37,26 @@ public class HomeScreenActivity extends Activity {
         button_3 = (ImageButton) findViewById(R.id.reply_3);
         button_4 = (ImageButton) findViewById(R.id.reply_4);
         button_5 = (ImageButton) findViewById(R.id.reply_5);
+        tx_1 = (TextView) findViewById(R.id.name_1);
+        tx_2 = (TextView) findViewById(R.id.name_2);
+        tx_3 = (TextView) findViewById(R.id.name_3);
+        tx_4 = (TextView) findViewById(R.id.name_4);
+        tx_5 = (TextView) findViewById(R.id.name_5);
+
+
         //call the setup popup menu function for the button
         setPopup(button_1);
         setPopup(button_2);
         setPopup(button_3);
         setPopup(button_4);
         setPopup(button_5);
+
+        //call view profile function to alter the profile screen
+        viewProfile(tx_1);
+        viewProfile(tx_2);
+        viewProfile(tx_3);
+        viewProfile(tx_4);
+        viewProfile(tx_5);
     }
 
 
@@ -72,13 +92,6 @@ public class HomeScreenActivity extends Activity {
 		return super.onOptionsItemSelected(item);
 	}
 
-    //if user click on the image on the screen, it will switch to the poster's profile
-    public void viewProfile(View view){
-        Intent intent = new Intent(this, DisplayActivity.class);
-
-        startActivity(intent);
-    }
-
     public void setPopup(View view){
         //setup popup menu for the button
         view.setOnClickListener(new View.OnClickListener() {
@@ -104,5 +117,20 @@ public class HomeScreenActivity extends Activity {
             }
         });
     }
+
+    //set up a onclick listener on the textview
+    public void viewProfile(final TextView tx){
+        tx.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(HomeScreenActivity.this, Profile_display.class);
+                String name = tx.getText().toString();
+                //pass the user name to the profile display screen
+                intent.putExtra("UserName", name);
+                startActivity(intent);
+            }
+        });
+    }
+
 }
 

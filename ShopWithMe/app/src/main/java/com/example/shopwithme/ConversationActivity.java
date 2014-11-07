@@ -18,14 +18,20 @@ public class ConversationActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_conversation);
 		getActionBar().setTitle("Conversation");
-		TextView tv_1 = (TextView) findViewById(R.id.marys_post);
-	    registerForContextMenu(tv_1);
-	    TextView tv_2 = (TextView) findViewById(R.id.nicks_reply);
+
+        Intent intent = getIntent();
+        TextView tx = (TextView) findViewById(R.id.post);
+        String postContent = intent.getStringExtra("post");
+        String posterName = intent.getStringExtra("poster");
+        tx.setText(posterName + ": " + postContent);
+/**
+		TextView tv_2 = (TextView) findViewById(R.id.nicks_reply);
 	    registerForContextMenu(tv_2);
 	    TextView tv_3 = (TextView) findViewById(R.id.sarahs_reply);
-	    registerForContextMenu(tv_3);
+	    registerForContextMenu(tv_3); **/
 	}
-	
+
+/**
 	@Override
 	public void onCreateContextMenu(ContextMenu menu, View v,
 			ContextMenuInfo menuInfo) {
@@ -47,7 +53,8 @@ public class ConversationActivity extends Activity {
 		}
 		
 		return super.onContextItemSelected(item);
-	}
+    }
+ **/
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
@@ -71,7 +78,7 @@ public class ConversationActivity extends Activity {
 			startActivity(intent);
 		}
 		else if (id == R.id.action_profile) {
-			Intent intent = new Intent(this, ProfileActivity.class);
+			Intent intent = new Intent(this, profile_edit.class);
 			startActivity(intent);
 		}
 		return super.onOptionsItemSelected(item);

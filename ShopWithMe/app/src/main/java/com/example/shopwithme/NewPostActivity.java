@@ -37,7 +37,7 @@ public class NewPostActivity extends Activity {
 			return true;
 		}
 		else if (id == R.id.action_profile) {
-			Intent intent = new Intent(this, ProfileActivity.class);
+			Intent intent = new Intent(this, profile_edit.class);
 			startActivity(intent);
 		}
 		return super.onOptionsItemSelected(item);

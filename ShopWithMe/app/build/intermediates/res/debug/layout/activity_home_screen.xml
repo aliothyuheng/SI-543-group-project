@@ -19,7 +19,16 @@
         android:fontFamily="sans-serif"
         android:textStyle="italic"
         android:text="See who's shopping!!!"/>
- 	
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="400dp"
+        android:paddingLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/my_list_view">
+    </ListView>
+
+<!--
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="400dp"
@@ -274,7 +283,8 @@
 
         </TableLayout>
 
-    </ScrollView>
+     </ScrollView>
+     -->
 
 </LinearLayout>
 <!-- From: file:/F:/543/ShopWithMe/app/src/main/res/layout/activity_home_screen.xml -->

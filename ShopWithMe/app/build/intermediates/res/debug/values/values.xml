@@ -78,6 +78,7 @@
     <string name="title_activity_new_post">NewPostActivity</string>
     <string name="title_activity_profile">ProfileActivity</string>
     <string name="title_activity_profile_display">Profile_display</string>
+    <string name="title_activity_profile_edit">profile_edit</string>
     <string name="type_password">type your password</string>
     <string name="type_username">type your username</string>
     <!-- From: file:/F:/543/ShopWithMe/app/src/main/res/values/styles.xml -->

@@ -1,105 +1,193 @@
 package com.example.shopwithme;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
-import android.content.res.Resources;
-import android.graphics.drawable.Drawable;
-import android.media.Image;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.ViewGroup;
+import android.widget.BaseAdapter;
 import android.widget.ImageButton;
+import android.widget.ImageView;
+import android.widget.ListView;
 import android.widget.PopupMenu;
 import android.widget.TextView;
+import java.util.ArrayList;
+import java.util.HashMap;
 
 public class HomeScreenActivity extends Activity {
-    ImageButton button_1;
-    ImageButton button_2;
-    ImageButton button_3;
-    ImageButton button_4;
-    ImageButton button_5;
-    TextView tx_1;
-    TextView tx_2;
-    TextView tx_3;
-    TextView tx_4;
-    TextView tx_5;
+    private ListView listview;
 
-	protected void onCreate(Bundle savedInstanceState) {
+    private ArrayList<HashMap<String, Object>> postList = new ArrayList<HashMap<String, Object>>();
+
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_screen);
         getActionBar().setTitle("Home");
-
-        //set up button listener for all the image button. If click on the image button,
-        //a pop up menu will display
-        button_1 = (ImageButton) findViewById(R.id.reply_1);
-        button_2 = (ImageButton) findViewById(R.id.reply_2);
-        button_3 = (ImageButton) findViewById(R.id.reply_3);
-        button_4 = (ImageButton) findViewById(R.id.reply_4);
-        button_5 = (ImageButton) findViewById(R.id.reply_5);
-        tx_1 = (TextView) findViewById(R.id.name_1);
-        tx_2 = (TextView) findViewById(R.id.name_2);
-        tx_3 = (TextView) findViewById(R.id.name_3);
-        tx_4 = (TextView) findViewById(R.id.name_4);
-        tx_5 = (TextView) findViewById(R.id.name_5);
-
-
-        //call the setup popup menu function for the button
-        setPopup(button_1);
-        setPopup(button_2);
-        setPopup(button_3);
-        setPopup(button_4);
-        setPopup(button_5);
-
-        //call view profile function to alter the profile screen
-        viewProfile(tx_1);
-        viewProfile(tx_2);
-        viewProfile(tx_3);
-        viewProfile(tx_4);
-        viewProfile(tx_5);
+        listview = (ListView) findViewById(R.id.my_list_view);
+        //initialize the list
+        initList();
+        //set up a customAdapter
+        CustomAdapter postAdapter = new CustomAdapter(this, postList, R.layout.my_list_item, new String[]{"name", "post", "image"},
+                new int[]{R.id.name, R.id.post, R.id.user_image});
+        //add the customAdapter to the listview
+        listview.setAdapter(postAdapter);
     }
 
+    //create option menu
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.home_screen, menu);
+        return true;
+    }
 
-	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.home_screen, menu);
-		return true;
-	}
-
-	@Override
-	public boolean onOptionsItemSelected(MenuItem item) {
-		// Handle action bar item clicks here. The action bar will
-		// automatically handle clicks on the Home/Up button, so long
-		// as you specify a parent activity in AndroidManifest.xml.
-		int id = item.getItemId();
-		if (id == R.id.action_home) {
-			return true;
-		}
-		else if (id == R.id.action_post) {
-			Intent intent = new Intent(this, NewPostActivity.class);
-			startActivity(intent);
-			return true;
-		}
-		else if (id == R.id.action_profile) {
-			Intent intent = new Intent(this, ProfileActivity.class);
-			startActivity(intent);
-		}
-        else if (id == R.id.action_filter) {
+    //set the option menu item function
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle action bar item clicks here. The action bar will
+        // automatically handle clicks on the Home/Up button, so long
+        // as you specify a parent activity in AndroidManifest.xml.
+        int id = item.getItemId();
+        if (id == R.id.action_home) {
+            return true;
+        } else if (id == R.id.action_post) {
+            Intent intent = new Intent(this, NewPostActivity.class);
+            startActivity(intent);
+            return true;
+        } else if (id == R.id.action_profile) {
+            Intent intent = new Intent(this, profile_edit.class);
+            startActivity(intent);
+        } else if (id == R.id.action_filter) {
             Intent intent = new Intent(this, FilterActivity.class);
             startActivity(intent);
         }
-		return super.onOptionsItemSelected(item);
-	}
+        return super.onOptionsItemSelected(item);
+    }
 
-    public void setPopup(View view){
+    static class ViewHolder {
+        //create a view holder class to hold all the views of one post
+        public TextView name;
+        public TextView post;
+        public ImageView userImage;
+        public ImageButton replyButton;
+    }
+
+    //setup the initialized value for the post list
+    public void initList() {
+        HashMap<String, Object> map = new HashMap<String, Object>();
+        map.put("name", "Sue");
+        map.put("post", "I need to shop for some shoes. Would anyone like to join?");
+        map.put("image", R.drawable.sue);
+        postList.add(map);
+
+        map = new HashMap<String, Object>();
+        map.put("name", "Nick");
+        map.put("post", "I'm looking for some good music. Anyone want to go to a record store?");
+        map.put("image", R.drawable.nick);
+        postList.add(map);
+
+        map = new HashMap<String, Object>();
+        map.put("name", "Mary");
+        map.put("post", "Anyone want to go clothes shopping? I found a new store on Liberty.");
+        map.put("image", R.drawable.mary);
+        postList.add(map);
+
+        map = new HashMap<String, Object>();
+        map.put("name", "Jason");
+        map.put("post", "I want to find some good cajun food. Anyone want to check out midtown with me?");
+        map.put("image", R.drawable.jason);
+        postList.add(map);
+
+        map = new HashMap<String, Object>();
+        map.put("name", "Mike");
+        map.put("post", "I'm looking for some good music. Anyone want to go to a record store?");
+        map.put("image", R.drawable.mike);
+        postList.add(map);
+    }
+
+    //set up the customAdpater
+    public class CustomAdapter extends BaseAdapter {
+        private ArrayList<HashMap<String, Object>> mAppList;
+        private LayoutInflater mInflater;
+        private Context mContext;
+        private String[] keyString;
+        private int[] valueViewID;
+        private ViewHolder holder;
+
+        //set up the fram of customAdapter
+        public CustomAdapter(Context c, ArrayList<HashMap<String, Object>> appList, int resource,
+                             String[] from, int[] to) {
+            mAppList = appList;
+            mContext = c;
+            mInflater = (LayoutInflater) mContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+            keyString = new String[from.length];
+            valueViewID = new int[to.length];
+            System.arraycopy(from, 0, keyString, 0, from.length);
+            System.arraycopy(to, 0, valueViewID, 0, to.length);
+        }
+
+        @Override
+        public int getCount() {
+            return mAppList.size();
+        }
+
+        @Override
+        public Object getItem(int position) {
+            return mAppList.get(position);
+        }
+
+        @Override
+        public long getItemId(int position) {
+            return position;
+        }
+
+        @Override
+        public View getView(int position, View convertView, ViewGroup parent) {
+            holder = null;
+
+            //set up the specific views for holder class
+            if (convertView != null) {
+                holder = (ViewHolder) convertView.getTag();
+            } else {
+                convertView = mInflater.inflate(R.layout.my_list_item, null);
+                holder = new ViewHolder();
+                holder.name = (TextView) convertView.findViewById(valueViewID[0]);
+                holder.post = (TextView) convertView.findViewById(valueViewID[1]);
+                holder.userImage = (ImageView) convertView.findViewById(valueViewID[2]);
+                holder.replyButton = (ImageButton) convertView.findViewById(R.id.reply);
+                convertView.setTag(holder);
+            }
+
+            //put information into holder
+            HashMap<String, Object> appInfo = mAppList.get(position);
+            if (appInfo != null) {
+                String posterName = (String) appInfo.get(keyString[0]);
+                String postContent = (String) appInfo.get(keyString[1]);
+                int imageId = (Integer) appInfo.get(keyString[2]);
+                holder.name.setText(posterName);
+                holder.post.setText(postContent);
+                holder.userImage.setImageDrawable(holder.userImage.getResources().getDrawable(imageId));
+                //set up pop menu for reply button
+                setPopup(holder.replyButton, posterName, postContent);
+                //set up view profile for name text
+                viewProfile(holder.name);
+            }
+            return convertView;
+        }
+    }
+
+    public void setPopup(final ImageView iv, final String poserName, final String postToPass) {
         //setup popup menu for the button
-        view.setOnClickListener(new View.OnClickListener() {
+        iv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 PopupMenu popup = new PopupMenu(HomeScreenActivity.this, view);
                 popup.getMenuInflater().inflate(R.menu.content_menu, popup.getMenu());
-                popup.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener(){
+                popup.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
                     //setup onclick listener for the pop up menu
                     public boolean onMenuItemClick(MenuItem item) {
                         int id = item.getItemId();
@@ -108,6 +196,8 @@ public class HomeScreenActivity extends Activity {
                             startActivity(intent);
                         } else if (id == R.id.action_reply) {
                             Intent intent = new Intent(HomeScreenActivity.this, ConversationActivity.class);
+                            intent.putExtra("post", postToPass);
+                            intent.putExtra("poster", poserName);
                             startActivity(intent);
                         }
                         return true;
@@ -119,7 +209,7 @@ public class HomeScreenActivity extends Activity {
     }
 
     //set up a onclick listener on the textview
-    public void viewProfile(final TextView tx){
+    public void viewProfile(final TextView tx) {
         tx.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -131,6 +221,4 @@ public class HomeScreenActivity extends Activity {
             }
         });
     }
-
 }
-

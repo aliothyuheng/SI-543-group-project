@@ -8,10 +8,9 @@
     tools:context="com.example.shopwithme.ConversationActivity" >
    
     <TextView 
-        android:id="@+id/marys_post"
+        android:id="@+id/post"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/marys_post"
         android:textSize="25sp"
         />
     

@@ -19,30 +19,11 @@ public class Profile_display extends Activity {
         getActionBar().setTitle("Profile");
         //get the intent from the home screen
         Intent intent = getIntent();
-        TextView tx = (TextView) findViewById(R.id.profile_name);
-        ImageView image = (ImageView) findViewById(R.id.user_photo);
-        //automatically change the user's name based on the text passed in
-        String name = intent.getStringExtra("UserName");
-        tx.setText("Name: "+ name);
-        Resources res = getResources();
-        //automatically change the user's image based on the name passed in
-        if (name.equals("Sue")) {
-            image.setImageDrawable(res.getDrawable(R.drawable.user_1));
-        }
-        else if (name.equals("Nick")) {
-            image.setImageDrawable(res.getDrawable(R.drawable.user_2));
-        }
-        else if (name.equals("Mary")) {
-            image.setImageDrawable(res.getDrawable(R.drawable.user_3));
-        }
-        else if (name.equals("Jason")){
-            image.setImageDrawable(res.getDrawable(R.drawable.user_4));
-        }
-        else if (name.equals("Mike")) {
-            image.setImageDrawable(res.getDrawable(R.drawable.user_5));
+        if (intent != null) {
+            String name = intent.getStringExtra("UserName");
+            setupProfile(name);
         }
     }
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -66,9 +47,29 @@ public class Profile_display extends Activity {
             startActivity(intent);
         }
         else if (id == R.id.action_profile) {
-            Intent intent = new Intent(this, ProfileActivity.class);
+            Intent intent = new Intent(this, profile_edit.class);
             startActivity(intent);
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    public void setupProfile(String name){
+        TextView tx = (TextView) findViewById(R.id.profile_name);
+        ImageView image = (ImageView) findViewById(R.id.user_photo);
+        //automatically change the user's name based on the text passed in
+        tx.setText("Name: " + name);
+        Resources res = getResources();
+        //automatically change the user's image based on the name passed in
+        if (name.equals("Sue")) {
+            image.setImageDrawable(res.getDrawable(R.drawable.sue));
+        } else if (name.equals("Nick")) {
+            image.setImageDrawable(res.getDrawable(R.drawable.nick));
+        } else if (name.equals("Mary")) {
+            image.setImageDrawable(res.getDrawable(R.drawable.mary));
+        } else if (name.equals("Jason")) {
+            image.setImageDrawable(res.getDrawable(R.drawable.jason));
+        } else if (name.equals("Mike")) {
+            image.setImageDrawable(res.getDrawable(R.drawable.mike));
+        }
     }
 }

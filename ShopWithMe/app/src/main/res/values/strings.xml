@@ -76,5 +76,6 @@
     <string name="title_activity_display">DisplayActivity</string>
     <string name="title_activity_profile_display">Profile_display</string>
     <string name="title_activity_profile_edit">profile_edit</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>

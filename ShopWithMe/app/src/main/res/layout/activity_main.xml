@@ -10,7 +10,7 @@
     tools:context="com.example.shopwithme.MainActivity" >
 
     <TextView
-        android:id="@+id/WelcomText"
+        android:id="@+id/WelcomeText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"

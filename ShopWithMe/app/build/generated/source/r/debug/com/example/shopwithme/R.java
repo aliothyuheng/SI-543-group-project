@@ -54,7 +54,7 @@ public final class R {
         public static final int SubmitFilterButton=0x7f090012;
         public static final int UserName=0x7f090015;
         public static final int UserNameTextbox=0x7f090016;
-        public static final int WelcomText=0x7f090014;
+        public static final int WelcomeText=0x7f090014;
         public static final int action_filter=0x7f09003a;
         public static final int action_home=0x7f090036;
         public static final int action_message=0x7f090034;
@@ -101,7 +101,8 @@ public final class R {
         public static final int activity_new_post=0x7f030005;
         public static final int activity_profile_display=0x7f030006;
         public static final int activity_profile_edit=0x7f030007;
-        public static final int my_list_item=0x7f030008;
+        public static final int fragment_alter=0x7f030008;
+        public static final int my_list_item=0x7f030009;
     }
     public static final class menu {
         public static final int content_menu=0x7f080000;
@@ -141,26 +142,27 @@ public final class R {
         public static final int clothing=0x7f060016;
         public static final int food=0x7f060017;
         public static final int forget_password=0x7f060018;
-        public static final int hello_world=0x7f060019;
-        public static final int login=0x7f06001a;
-        public static final int marys_post=0x7f06001b;
-        public static final int music=0x7f06001c;
-        public static final int nicks_reply=0x7f06001d;
-        public static final int prompt=0x7f06001e;
-        public static final int sarahs_reply=0x7f06001f;
-        public static final int sign_up=0x7f060020;
-        public static final int souvenir=0x7f060021;
-        public static final int title_activity_conversation=0x7f060022;
-        public static final int title_activity_display=0x7f060023;
-        public static final int title_activity_filter=0x7f060024;
-        public static final int title_activity_home_screen=0x7f060025;
-        public static final int title_activity_message=0x7f060026;
-        public static final int title_activity_new_post=0x7f060027;
-        public static final int title_activity_profile=0x7f060028;
-        public static final int title_activity_profile_display=0x7f060029;
-        public static final int title_activity_profile_edit=0x7f06002a;
-        public static final int type_password=0x7f06002b;
-        public static final int type_username=0x7f06002c;
+        public static final int hello_blank_fragment=0x7f060019;
+        public static final int hello_world=0x7f06001a;
+        public static final int login=0x7f06001b;
+        public static final int marys_post=0x7f06001c;
+        public static final int music=0x7f06001d;
+        public static final int nicks_reply=0x7f06001e;
+        public static final int prompt=0x7f06001f;
+        public static final int sarahs_reply=0x7f060020;
+        public static final int sign_up=0x7f060021;
+        public static final int souvenir=0x7f060022;
+        public static final int title_activity_conversation=0x7f060023;
+        public static final int title_activity_display=0x7f060024;
+        public static final int title_activity_filter=0x7f060025;
+        public static final int title_activity_home_screen=0x7f060026;
+        public static final int title_activity_message=0x7f060027;
+        public static final int title_activity_new_post=0x7f060028;
+        public static final int title_activity_profile=0x7f060029;
+        public static final int title_activity_profile_display=0x7f06002a;
+        public static final int title_activity_profile_edit=0x7f06002b;
+        public static final int type_password=0x7f06002c;
+        public static final int type_username=0x7f06002d;
     }
     public static final class style {
         /** 

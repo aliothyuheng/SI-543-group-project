@@ -3,13 +3,18 @@ package com.example.shopwithme;
 import com.example.shopwithme.R;
 
 import android.app.Activity;
+import android.app.FragmentManager;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.EditText;
 
 public class MainActivity extends Activity {
+
+    private EditText userName;
+    private EditText password;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -37,8 +42,18 @@ public class MainActivity extends Activity {
 	}
 	
 	public void Login(View view) {
-		Intent intent = new Intent(this, HomeScreenActivity.class);
-		startActivity(intent);
+        userName = (EditText) findViewById(R.id.UserNameTextbox);
+        password = (EditText) findViewById(R.id.PasswordTextbox);
+        if (userName.getText().toString().equals("") || password.getText().toString().equals("")){
+            FragmentManager fm = getFragmentManager();
+            AlterFragment alter = new AlterFragment();
+            alter.setRetainInstance(true);
+            alter.show(fm, "fragment_alter");
+        }
+        else {
+            Intent intent = new Intent(this, HomeScreenActivity.class);
+            startActivity(intent);
+        }
 	}
 }
 

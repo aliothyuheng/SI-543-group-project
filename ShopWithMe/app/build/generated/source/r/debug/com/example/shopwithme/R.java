@@ -29,6 +29,11 @@ public final class R {
         public static final int nick=0x7f020005;
         public static final int reply=0x7f020006;
         public static final int sue=0x7f020007;
+        public static final int user_1=0x7f020008;
+        public static final int user_2=0x7f020009;
+        public static final int user_3=0x7f02000a;
+        public static final int user_4=0x7f02000b;
+        public static final int user_5=0x7f02000c;
     }
     public static final class id {
         public static final int BudgetLabel=0x7f090007;
@@ -55,42 +60,43 @@ public final class R {
         public static final int UserName=0x7f090015;
         public static final int UserNameTextbox=0x7f090016;
         public static final int WelcomeText=0x7f090014;
-        public static final int action_filter=0x7f09003a;
-        public static final int action_home=0x7f090036;
-        public static final int action_message=0x7f090034;
-        public static final int action_post=0x7f090037;
-        public static final int action_poster_profile=0x7f090039;
-        public static final int action_profile=0x7f090038;
-        public static final int action_reply=0x7f090035;
-        public static final int action_settings=0x7f09003b;
+        public static final int action_filter=0x7f09003b;
+        public static final int action_home=0x7f090037;
+        public static final int action_message=0x7f090035;
+        public static final int action_post=0x7f090038;
+        public static final int action_poster_profile=0x7f09003a;
+        public static final int action_profile=0x7f090039;
+        public static final int action_reply=0x7f090036;
+        public static final int action_settings=0x7f09003c;
         public static final int btnSubmit=0x7f090027;
         public static final int budget=0x7f090022;
         public static final int budgetSpinner=0x7f090023;
-        public static final int button1=0x7f090030;
+        public static final int button1=0x7f090031;
+        public static final int container=0x7f090028;
         public static final int editLocation=0x7f090025;
         public static final int editPost=0x7f090026;
-        public static final int editText1=0x7f09002f;
-        public static final int editText2=0x7f09002a;
-        public static final int editText3=0x7f09002b;
-        public static final int editText4=0x7f09002c;
-        public static final int imageView2=0x7f09002e;
+        public static final int editText1=0x7f090030;
+        public static final int editText2=0x7f09002b;
+        public static final int editText3=0x7f09002c;
+        public static final int editText4=0x7f09002d;
+        public static final int imageView2=0x7f09002f;
         public static final int location=0x7f090024;
         public static final int messageBox=0x7f09001f;
         public static final int messageTitle=0x7f09001c;
         public static final int my_list_view=0x7f090013;
-        public static final int name=0x7f090032;
+        public static final int name=0x7f090033;
         public static final int nicks_reply=0x7f090001;
         public static final int post=0x7f090000;
-        public static final int profile_name=0x7f090029;
-        public static final int reply=0x7f090033;
+        public static final int profile_name=0x7f09002a;
+        public static final int reply=0x7f090034;
         public static final int replyBox=0x7f090003;
         public static final int sarahs_reply=0x7f090002;
         public static final int spinner1=0x7f090011;
-        public static final int textView1=0x7f09002d;
+        public static final int textView1=0x7f09002e;
         public static final int userMaryMessage=0x7f09001e;
         public static final int userSueMessage=0x7f09001d;
-        public static final int user_image=0x7f090031;
-        public static final int user_photo=0x7f090028;
+        public static final int user_image=0x7f090032;
+        public static final int user_photo=0x7f090029;
     }
     public static final class layout {
         public static final int activity_conversation=0x7f030000;
@@ -99,10 +105,12 @@ public final class R {
         public static final int activity_main=0x7f030003;
         public static final int activity_message=0x7f030004;
         public static final int activity_new_post=0x7f030005;
-        public static final int activity_profile_display=0x7f030006;
-        public static final int activity_profile_edit=0x7f030007;
-        public static final int fragment_alter=0x7f030008;
-        public static final int my_list_item=0x7f030009;
+        public static final int activity_profile=0x7f030006;
+        public static final int activity_profile_display=0x7f030007;
+        public static final int activity_profile_edit=0x7f030008;
+        public static final int fragment_alter=0x7f030009;
+        public static final int fragment_profile=0x7f03000a;
+        public static final int my_list_item=0x7f03000b;
     }
     public static final class menu {
         public static final int content_menu=0x7f080000;
@@ -113,8 +121,9 @@ public final class R {
         public static final int main=0x7f080005;
         public static final int message=0x7f080006;
         public static final int new_post=0x7f080007;
-        public static final int profile_display=0x7f080008;
-        public static final int profile_edit=0x7f080009;
+        public static final int profile=0x7f080008;
+        public static final int profile_display=0x7f080009;
+        public static final int profile_edit=0x7f08000a;
     }
     public static final class string {
         public static final int $=0x7f060000;

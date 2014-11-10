@@ -1,0 +1,17 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    tools:context="com.example.shopwithme.ReplyFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:text="Please input a valid response." />
+
+</LinearLayout>
+
+<!-- From: file:/C:/Users/nwmalzahn/Documents/GitHub/SI-543-group-project/ShopWithMe/app/src/main/res/layout/fragment_reply.xml -->

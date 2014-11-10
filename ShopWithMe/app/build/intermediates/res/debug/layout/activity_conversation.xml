@@ -46,7 +46,8 @@
         android:id="@+id/ReplySubmit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/Submit" 
+        android:text="@string/Submit"
+        android:onClick="Reply"
         />
 </LinearLayout>
 <!-- From: file:/C:/Users/nwmalzahn/Documents/GitHub/SI-543-group-project/ShopWithMe/app/src/main/res/layout/activity_conversation.xml -->

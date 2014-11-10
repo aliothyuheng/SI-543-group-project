@@ -1,6 +1,7 @@
 package com.example.shopwithme;
 
 import android.app.Activity;
+import android.app.FragmentManager;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.ContextMenu;
@@ -9,9 +10,12 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ContextMenu.ContextMenuInfo;
+import android.widget.EditText;
 import android.widget.TextView;
 
 public class ConversationActivity extends Activity {
+
+    private EditText replyText;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -83,6 +87,21 @@ public class ConversationActivity extends Activity {
 		}
 		return super.onOptionsItemSelected(item);
 	}
+
+
+    public void Reply(View view) {
+        replyText = (EditText) findViewById(R.id.replyBox);
+        if (replyText.getText().toString().equals("")) {
+            FragmentManager fm = getFragmentManager();
+            ReplyFragment alter = new ReplyFragment();
+            alter.setRetainInstance(true);
+            alter.show(fm, "fragment_reply");
+        }
+        else {
+            Intent intent = new Intent(this, ConversationActivity.class);
+            startActivity(intent);
+        }
+    }
 	
 	// text from reply box gets put on screen when user submits it
 	// user can click on another user's name in order to go to their profile page

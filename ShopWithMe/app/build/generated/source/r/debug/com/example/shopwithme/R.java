@@ -110,7 +110,8 @@ public final class R {
         public static final int activity_profile_edit=0x7f030008;
         public static final int fragment_alter=0x7f030009;
         public static final int fragment_profile=0x7f03000a;
-        public static final int my_list_item=0x7f03000b;
+        public static final int fragment_reply=0x7f03000b;
+        public static final int my_list_item=0x7f03000c;
     }
     public static final class menu {
         public static final int content_menu=0x7f080000;

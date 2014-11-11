@@ -2,18 +2,18 @@
 <items version="2" >
 
     <item
-        jar="C:\Users\nwmalzahn\android-sdks\extras\android\m2repository\com\android\support\support-annotations\20.0.0\support-annotations-20.0.0.jar"
-        jumboMode="false"
-        revision="20.0.0"
-        sha1="9d9013e9ff35fc3756411e62873c363c70c638fa">
-        <dex dex="C:\Users\nwmalzahn\Documents\GitHub\SI-543-group-project\ShopWithMe\app\build\intermediates\pre-dexed\debug\support-annotations-20.0.0-e7711527d818b54a46f5acfd9dcd0d8a164a53d5.jar" />
-    </item>
-    <item
         jar="C:\Users\nwmalzahn\Documents\GitHub\SI-543-group-project\ShopWithMe\app\build\intermediates\exploded-aar\com.android.support\support-v4\20.0.0\classes.jar"
         jumboMode="false"
         revision="20.0.0"
         sha1="8694693636ab36910c8100ce527c258ff3ebece0">
         <dex dex="C:\Users\nwmalzahn\Documents\GitHub\SI-543-group-project\ShopWithMe\app\build\intermediates\pre-dexed\debug\classes-7febd50c99fa38f94f126f3eca6497ef2dd7f14f.jar" />
+    </item>
+    <item
+        jar="C:\Users\nwmalzahn\android-sdks\extras\android\m2repository\com\android\support\support-annotations\20.0.0\support-annotations-20.0.0.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="9d9013e9ff35fc3756411e62873c363c70c638fa">
+        <dex dex="C:\Users\nwmalzahn\Documents\GitHub\SI-543-group-project\ShopWithMe\app\build\intermediates\pre-dexed\debug\support-annotations-20.0.0-e7711527d818b54a46f5acfd9dcd0d8a164a53d5.jar" />
     </item>
     <item
         jar="C:\Users\nwmalzahn\Documents\GitHub\SI-543-group-project\ShopWithMe\app\build\intermediates\exploded-aar\com.android.support\support-v4\20.0.0\libs\internal_impl-20.0.0.jar"

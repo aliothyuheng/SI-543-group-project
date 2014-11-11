@@ -46,7 +46,7 @@ public class ConversationActivity extends Activity {
                 new String[] {"name", "reply"}, new int[] {R.id.name, R.id.reply});
         replyListView.setAdapter(replyAdapter);
 
-        /**
+
         Intent intent = getIntent();
         TextView tx = (TextView) findViewById(R.id.post);
         String postContent = intent.getStringExtra("post");

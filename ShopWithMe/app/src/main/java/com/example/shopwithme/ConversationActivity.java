@@ -33,13 +33,13 @@ public class ConversationActivity extends Activity {
     private ArrayList<HashMap<String, Object>> replyList = new ArrayList<HashMap<String, Object>>();
 
 
-	@Override
-	protected void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_conversation);
-		getActionBar().setTitle("Conversation");
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_conversation);
+        getActionBar().setTitle("Conversation");
         replyListView = (ListView) findViewById(R.id.reply_list_view);
-        
+
         initList();
 
         CustomAdapter replyAdapter = new CustomAdapter(this, replyList, R.layout.reply_list_item,
@@ -53,66 +53,66 @@ public class ConversationActivity extends Activity {
         String posterName = intent.getStringExtra("poster");
         tx.setText(posterName + ": " + postContent);
 /**
-		TextView tv_2 = (TextView) findViewById(R.id.nicks_reply);
-	    registerForContextMenu(tv_2);
-	    TextView tv_3 = (TextView) findViewById(R.id.sarahs_reply);
-	    registerForContextMenu(tv_3); **/
-	}
+ TextView tv_2 = (TextView) findViewById(R.id.nicks_reply);
+ registerForContextMenu(tv_2);
+ TextView tv_3 = (TextView) findViewById(R.id.sarahs_reply);
+ registerForContextMenu(tv_3); **/
+    }
 
 
 
     /**
-	@Override
-	public void onCreateContextMenu(ContextMenu menu, View v,
-			ContextMenuInfo menuInfo) {
-		MenuInflater inflater = getMenuInflater();
-		inflater.inflate(R.menu.conversation_content_menu, menu);
-		super.onCreateContextMenu(menu, v, menuInfo);
-	}
-	
-	@Override
-	public boolean onContextItemSelected(MenuItem item) {
-		int id = item.getItemId();
-		if (id == R.id.action_message) {
-			Intent intent = new Intent(this, MessageActivity.class);
-	        startActivity(intent);
-		}
-		else if (id == R.id.action_poster_profile) {
-			Intent intent = new Intent(this, Profile_display.class);
-	        startActivity(intent);
-		}
-		
-		return super.onContextItemSelected(item);
+     @Override
+     public void onCreateContextMenu(ContextMenu menu, View v,
+     ContextMenuInfo menuInfo) {
+     MenuInflater inflater = getMenuInflater();
+     inflater.inflate(R.menu.conversation_content_menu, menu);
+     super.onCreateContextMenu(menu, v, menuInfo);
+     }
+
+     @Override
+     public boolean onContextItemSelected(MenuItem item) {
+     int id = item.getItemId();
+     if (id == R.id.action_message) {
+     Intent intent = new Intent(this, MessageActivity.class);
+     startActivity(intent);
+     }
+     else if (id == R.id.action_poster_profile) {
+     Intent intent = new Intent(this, Profile_display.class);
+     startActivity(intent);
+     }
+
+     return super.onContextItemSelected(item);
+     }
+     **/
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.conversation, menu);
+        return true;
     }
- **/
 
-	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.conversation, menu);
-		return true;
-	}
-
-	@Override
-	public boolean onOptionsItemSelected(MenuItem item) {
-		// Handle action bar item clicks here. The action bar will
-		// automatically handle clicks on the Home/Up button, so long
-		// as you specify a parent activity in AndroidManifest.xml.
-		int id = item.getItemId();
-		if (id == R.id.action_home) {
-			Intent intent = new Intent(this, HomeScreenActivity.class);
-			startActivity(intent);
-		}
-		else if (id == R.id.action_post) {
-			Intent intent = new Intent(this, NewPostActivity.class);
-			startActivity(intent);
-		}
-		else if (id == R.id.action_profile) {
-			Intent intent = new Intent(this, profile_edit.class);
-			startActivity(intent);
-		}
-		return super.onOptionsItemSelected(item);
-	}
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle action bar item clicks here. The action bar will
+        // automatically handle clicks on the Home/Up button, so long
+        // as you specify a parent activity in AndroidManifest.xml.
+        int id = item.getItemId();
+        if (id == R.id.action_home) {
+            Intent intent = new Intent(this, HomeScreenActivity.class);
+            startActivity(intent);
+        }
+        else if (id == R.id.action_post) {
+            Intent intent = new Intent(this, NewPostActivity.class);
+            startActivity(intent);
+        }
+        else if (id == R.id.action_profile) {
+            Intent intent = new Intent(this, profile_edit.class);
+            startActivity(intent);
+        }
+        return super.onOptionsItemSelected(item);
+    }
 
     static class ViewHolder {
         //create a view holder class to hold all the views of one post
@@ -222,7 +222,7 @@ public class ConversationActivity extends Activity {
             startActivity(intent);
         }
     }
-	
-	// text from reply box gets put on screen when user submits it
-	// user can click on another user's name in order to go to their profile page
+
+    // text from reply box gets put on screen when user submits it
+    // user can click on another user's name in order to go to their profile page
 }

@@ -9,8 +9,8 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.shopwithme.ConversationActivity" >
-   
-    <TextView 
+
+    <TextView
         android:id="@+id/post"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -27,36 +27,36 @@
         android:id="@+id/reply_list_view">
     </ListView>
 
-<!--
-    <TextView 
-        android:id="@+id/nicks_reply"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/nicks_reply"
-        android:textSize="20sp"
-        android:layout_marginTop="20dp"
-        />
-    
-    <TextView 
-        android:id="@+id/sarahs_reply"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/sarahs_reply"
-        android:textSize="20sp"
-        android:layout_marginTop="20dp"
-        />
--->
+    <!--
+        <TextView
+            android:id="@+id/nicks_reply"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/nicks_reply"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            />
 
-    <EditText 
+        <TextView
+            android:id="@+id/sarahs_reply"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sarahs_reply"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            />
+    -->
+
+    <EditText
         android:id="@+id/replyBox"
-    	android:layout_width="match_parent"
-    	android:layout_height="wrap_content"
-    	android:hint="Reply here..."
-    	android:textSize="20sp"
-    	android:imeOptions="actionDone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Reply here..."
+        android:textSize="20sp"
+        android:imeOptions="actionDone"
         />
-    
-    <Button 
+
+    <Button
         android:id="@+id/ReplySubmit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

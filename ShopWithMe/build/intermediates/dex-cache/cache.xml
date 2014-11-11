@@ -1,26 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" >
+<pre-dex-items>
 
     <item
-        jar="C:\Users\nwmalzahn\Documents\GitHub\SI-543-group-project\ShopWithMe\app\build\intermediates\exploded-aar\com.android.support\support-v4\20.0.0\classes.jar"
+        dex="F:\543\ShopWithMe\app\build\intermediates\pre-dexed\debug\support-annotations-20.0.0-a4e99bb09db83315001218d362c2ad030bbe2f2c.jar"
+        jar="C:\Program Files (x86)\Android\android-sdk\extras\android\m2repository\com\android\support\support-annotations\20.0.0\support-annotations-20.0.0.jar"
         jumboMode="false"
         revision="20.0.0"
-        sha1="8694693636ab36910c8100ce527c258ff3ebece0">
-        <dex dex="C:\Users\nwmalzahn\Documents\GitHub\SI-543-group-project\ShopWithMe\app\build\intermediates\pre-dexed\debug\classes-7febd50c99fa38f94f126f3eca6497ef2dd7f14f.jar" />
-    </item>
+        sha1="9d9013e9ff35fc3756411e62873c363c70c638fa"/>
     <item
-        jar="C:\Users\nwmalzahn\android-sdks\extras\android\m2repository\com\android\support\support-annotations\20.0.0\support-annotations-20.0.0.jar"
+        dex="F:\543\ShopWithMe\app\build\intermediates\pre-dexed\debug\internal_impl-20.0.0-09ab7429adc2f3e6e8932b191ff32e27b0da299c.jar"
+        jar="F:\543\ShopWithMe\app\build\intermediates\exploded-aar\com.android.support\support-v4\20.0.0\libs\internal_impl-20.0.0.jar"
         jumboMode="false"
         revision="20.0.0"
-        sha1="9d9013e9ff35fc3756411e62873c363c70c638fa">
-        <dex dex="C:\Users\nwmalzahn\Documents\GitHub\SI-543-group-project\ShopWithMe\app\build\intermediates\pre-dexed\debug\support-annotations-20.0.0-e7711527d818b54a46f5acfd9dcd0d8a164a53d5.jar" />
-    </item>
+        sha1="e40b3078e3fbd353c9f44da8df25a8fc0078209d"/>
     <item
-        jar="C:\Users\nwmalzahn\Documents\GitHub\SI-543-group-project\ShopWithMe\app\build\intermediates\exploded-aar\com.android.support\support-v4\20.0.0\libs\internal_impl-20.0.0.jar"
+        dex="F:\543\ShopWithMe\app\build\intermediates\pre-dexed\debug\classes-d380e8bab5118c25a8a266264f10524946ef3ec9.jar"
+        jar="F:\543\ShopWithMe\app\build\intermediates\exploded-aar\com.android.support\support-v4\20.0.0\classes.jar"
         jumboMode="false"
         revision="20.0.0"
-        sha1="e40b3078e3fbd353c9f44da8df25a8fc0078209d">
-        <dex dex="C:\Users\nwmalzahn\Documents\GitHub\SI-543-group-project\ShopWithMe\app\build\intermediates\pre-dexed\debug\internal_impl-20.0.0-b39b441d773b6b645aaf265beff70afead24bdb1.jar" />
-    </item>
+        sha1="8694693636ab36910c8100ce527c258ff3ebece0"/>
 
-</items>
+</pre-dex-items>

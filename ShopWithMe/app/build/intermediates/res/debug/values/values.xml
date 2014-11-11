@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/C:/Users/nwmalzahn/Documents/GitHub/SI-543-group-project/ShopWithMe/app/src/main/res/values/strings.xml -->
-    <eat-comment/>
+
+    <!-- From: file:/F:/543/ShopWithMe/app/src/main/res/values/strings.xml -->
+    <eat-comment />
+
     <string-array name="budget_array">
         <item>$</item>
         <item>$$</item>
@@ -26,12 +28,14 @@
         <item>$$$</item>
         <item>$$$$</item>
     </string-array>
-    <!-- From: file:/C:/Users/nwmalzahn/Documents/GitHub/SI-543-group-project/ShopWithMe/app/src/main/res/values/dimens.xml -->
-    <eat-comment/>
+    <!-- From: file:/F:/543/ShopWithMe/app/src/main/res/values/dimens.xml -->
+    <eat-comment />
+
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
-    <!-- From: file:/C:/Users/nwmalzahn/Documents/GitHub/SI-543-group-project/ShopWithMe/app/src/main/res/values/strings.xml -->
-    <eat-comment/>
+    <!-- From: file:/F:/543/ShopWithMe/app/src/main/res/values/strings.xml -->
+    <eat-comment />
+
     <string name="$">$</string>
     <string name="$$">$$</string>
     <string name="$$$">$$$</string>
@@ -78,8 +82,9 @@
     <string name="title_activity_profile_edit">profile_edit</string>
     <string name="type_password">type your password</string>
     <string name="type_username">type your username</string>
-    <!-- From: file:/C:/Users/nwmalzahn/Documents/GitHub/SI-543-group-project/ShopWithMe/app/src/main/res/values/styles.xml -->
-    <eat-comment/>
+    <!-- From: file:/F:/543/ShopWithMe/app/src/main/res/values/styles.xml -->
+    <eat-comment />
+
     <style name="AppBaseTheme" parent="android:Theme.Light">
         <!--
             Theme customizations available in newer API levels can go in
@@ -87,7 +92,9 @@
             backward-compatibility can go here.
         -->
     </style>
+
     <style name="AppTheme" parent="AppBaseTheme">
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
     </style>
+
 </resources>

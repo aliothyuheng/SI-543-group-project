@@ -1,2 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="C:\Users\nwmalzahn\Documents\GitHub\SI-543-group-project\ShopWithMe\app\src\androidTest\res"/><source path="C:\Users\nwmalzahn\Documents\GitHub\SI-543-group-project\ShopWithMe\app\build\generated\res\rs\test\debug"/><source path="C:\Users\nwmalzahn\Documents\GitHub\SI-543-group-project\ShopWithMe\app\build\generated\res\generated\test\debug"/></dataSet><mergedItems/></merger>
+<merger version="2" >
+
+    <dataSet config="main" >
+        <source path="F:\543\ShopWithMe\app\src\androidTest\res" />
+        <source path="F:\543\ShopWithMe\app\build\generated\res\rs\test\debug" />
+        <source path="F:\543\ShopWithMe\app\build\generated\res\generated\test\debug" />
+    </dataSet>
+
+</merger>

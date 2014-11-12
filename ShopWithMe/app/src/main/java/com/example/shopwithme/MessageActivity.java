@@ -27,13 +27,16 @@ public class MessageActivity extends Activity {
 		setContentView(R.layout.activity_message);
 		getActionBar().setTitle("Message");
         listview = (ListView) findViewById(R.id.message_list_view);
+
         //initialize the list
         initList();
         //registerForContextMenu ((ListView) findViewById(R.id.listView));
         //ListView personNameListView = (ListView) findViewById(R.id.listView);
-        SimpleAdapter postAdapter = new SimpleAdapter(this, postList, android.R.layout.simple_list_item_1, new String[]
+        SimpleAdapter postAdapter = new SimpleAdapter(this, postList, R.layout.message_list_item, new String[]
                 {"name", "post"},
                     new int[] {R.id.name, R.id.post});
+
+        listview.setAdapter(postAdapter);
 	}
 
 	@Override

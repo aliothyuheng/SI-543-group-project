@@ -14,7 +14,7 @@
         android:text="@string/Message" 
         android:textSize="30sp"
         android:layout_marginBottom="10dp"/>
-    
+    <!--
     <TextView 
         android:id="@+id/userSueMessage"
         android:layout_width="match_parent"
@@ -29,8 +29,15 @@
         android:layout_height="wrap_content"
         android:text="Mary: Sure! Where would you like to go?"
         android:textSize="20sp"
-        />
-    
+        /> -->
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:paddingLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/message_list_view">
+    </ListView>
+
     <EditText 
         android:id="@+id/messageBox"
     	android:layout_width="match_parent"
@@ -48,4 +55,4 @@
         android:onClick="ConversationScreen"/>
 
 </LinearLayout>
-<!-- From: file:/F:/543/ShopWithMe/app/src/main/res/layout/activity_message.xml -->
+<!-- From: file:/C:/Users/omx/Documents/GitHub/SI-543-group-project/ShopWithMe/app/src/main/res/layout/activity_message.xml -->

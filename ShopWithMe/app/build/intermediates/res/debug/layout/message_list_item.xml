@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+</LinearLayout>
+
+    <?xml version="1.0" encoding="utf-8"?>-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="80dp"
+android:layout_marginTop="10dp"
+android:layout_marginBottom="10dp"
+android:layout_gravity="center_horizontal">
+
+<TextView
+    android:id="@+id/name"
+    android:layout_width="70dp"
+    android:layout_height="30dp"
+    android:textSize="20dp"
+    android:textColor="#0066FF"
+    android:textStyle="italic"/>
+
+<TextView
+    android:id="@+id/post"
+    android:layout_width="250dp"
+    android:layout_height="55dp"
+    android:layout_below="@id/name" />
+
+</RelativeLayout><!-- From: file:/C:/Users/omx/Documents/GitHub/SI-543-group-project/ShopWithMe/app/src/main/res/layout/message_list_item.xml -->

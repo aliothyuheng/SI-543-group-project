@@ -2,20 +2,20 @@
 <pre-dex-items>
 
     <item
-        dex="F:\543\ShopWithMe\app\build\intermediates\pre-dexed\debug\support-annotations-20.0.0-a4e99bb09db83315001218d362c2ad030bbe2f2c.jar"
-        jar="C:\Program Files (x86)\Android\android-sdk\extras\android\m2repository\com\android\support\support-annotations\20.0.0\support-annotations-20.0.0.jar"
+        dex="C:\Users\omx\Documents\GitHub\SI-543-group-project\ShopWithMe\app\build\intermediates\pre-dexed\debug\support-annotations-20.0.0-b10f7d70fe0f305462eb58bc40da9f47da56c22b.jar"
+        jar="C:\Users\omx\Downloads\ADT Bundle - Extracted\adt-bundle-windows-x86_64-20140702\sdk\extras\android\m2repository\com\android\support\support-annotations\20.0.0\support-annotations-20.0.0.jar"
         jumboMode="false"
         revision="20.0.0"
         sha1="9d9013e9ff35fc3756411e62873c363c70c638fa"/>
     <item
-        dex="F:\543\ShopWithMe\app\build\intermediates\pre-dexed\debug\internal_impl-20.0.0-09ab7429adc2f3e6e8932b191ff32e27b0da299c.jar"
-        jar="F:\543\ShopWithMe\app\build\intermediates\exploded-aar\com.android.support\support-v4\20.0.0\libs\internal_impl-20.0.0.jar"
+        dex="C:\Users\omx\Documents\GitHub\SI-543-group-project\ShopWithMe\app\build\intermediates\pre-dexed\debug\internal_impl-20.0.0-81e962829f67667e225129b5ed8317610e6bc888.jar"
+        jar="C:\Users\omx\Documents\GitHub\SI-543-group-project\ShopWithMe\app\build\intermediates\exploded-aar\com.android.support\support-v4\20.0.0\libs\internal_impl-20.0.0.jar"
         jumboMode="false"
         revision="20.0.0"
         sha1="e40b3078e3fbd353c9f44da8df25a8fc0078209d"/>
     <item
-        dex="F:\543\ShopWithMe\app\build\intermediates\pre-dexed\debug\classes-d380e8bab5118c25a8a266264f10524946ef3ec9.jar"
-        jar="F:\543\ShopWithMe\app\build\intermediates\exploded-aar\com.android.support\support-v4\20.0.0\classes.jar"
+        dex="C:\Users\omx\Documents\GitHub\SI-543-group-project\ShopWithMe\app\build\intermediates\pre-dexed\debug\classes-74df6fd4bfddc400e98936f97a6cfeb5a323fc3e.jar"
+        jar="C:\Users\omx\Documents\GitHub\SI-543-group-project\ShopWithMe\app\build\intermediates\exploded-aar\com.android.support\support-v4\20.0.0\classes.jar"
         jumboMode="false"
         revision="20.0.0"
         sha1="8694693636ab36910c8100ce527c258ff3ebece0"/>

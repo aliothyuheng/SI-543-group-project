@@ -6,14 +6,34 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ListView;
+import android.widget.SimpleAdapter;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 
 public class MessageActivity extends Activity {
+
+    //a list class type must be used when using a list view
+    //list items will be added programatically
+    //List<Map<String, String>> personName = new ArrayList<~>();
+    private ListView listview;
+    private ArrayList<HashMap<String, Object>> postList = new ArrayList<HashMap<String, Object>>();
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_message);
 		getActionBar().setTitle("Message");
+        listview = (ListView) findViewById(R.id.message_list_view);
+        //initialize the list
+        initList();
+        //registerForContextMenu ((ListView) findViewById(R.id.listView));
+        //ListView personNameListView = (ListView) findViewById(R.id.listView);
+        SimpleAdapter postAdapter = new SimpleAdapter(this, postList, android.R.layout.simple_list_item_1, new String[]
+                {"name", "post"},
+                    new int[] {R.id.name, R.id.post});
 	}
 
 	@Override
@@ -49,7 +69,20 @@ public class MessageActivity extends Activity {
 		Intent intent = new Intent(this, MessageActivity.class);
 		startActivity(intent);
 	}
-	
+    public void initList () {
+        HashMap<String, Object> map = new HashMap<String, Object>();
+        map.put("name", "Sue");
+        map.put("post", "Hi, I'd really like to meet up with you for some shoe shopping. Any interest?");
+        postList.add(map);
+
+        map = new HashMap<String, Object>();
+        map.put("name", "Mary");
+        map.put("post", "Sure! Where would you like to go?");
+        postList.add(map);
+
+    }
+
+
 	// Text that user writes in message box appears on same screen and gets sent to directed user
 	// user can click on another user's name in order to go to their profile page	
 }

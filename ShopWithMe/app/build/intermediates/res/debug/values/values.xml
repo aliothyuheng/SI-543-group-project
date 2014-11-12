@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <!-- From: file:/F:/543/ShopWithMe/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/C:/Users/omx/Documents/GitHub/SI-543-group-project/ShopWithMe/app/src/main/res/values/strings.xml -->
     <eat-comment />
 
     <string-array name="budget_array">
@@ -28,12 +28,12 @@
         <item>$$$</item>
         <item>$$$$</item>
     </string-array>
-    <!-- From: file:/F:/543/ShopWithMe/app/src/main/res/values/dimens.xml -->
+    <!-- From: file:/C:/Users/omx/Documents/GitHub/SI-543-group-project/ShopWithMe/app/src/main/res/values/dimens.xml -->
     <eat-comment />
 
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
-    <!-- From: file:/F:/543/ShopWithMe/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/C:/Users/omx/Documents/GitHub/SI-543-group-project/ShopWithMe/app/src/main/res/values/strings.xml -->
     <eat-comment />
 
     <string name="$">$</string>
@@ -82,7 +82,7 @@
     <string name="title_activity_profile_edit">profile_edit</string>
     <string name="type_password">type your password</string>
     <string name="type_username">type your username</string>
-    <!-- From: file:/F:/543/ShopWithMe/app/src/main/res/values/styles.xml -->
+    <!-- From: file:/C:/Users/omx/Documents/GitHub/SI-543-group-project/ShopWithMe/app/src/main/res/values/styles.xml -->
     <eat-comment />
 
     <style name="AppBaseTheme" parent="android:Theme.Light">

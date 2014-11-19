@@ -2,212 +2,212 @@
 <merger version="2" >
 
     <dataSet config="20.0.0" >
-        <source path="F:\543\ShopWithMe\app\build\intermediates\exploded-aar\com.android.support\support-v4\20.0.0\res" />
+        <source path="C:\Users\omx\Documents\GitHub\SI-543-group-project\ShopWithMe\app\build\intermediates\exploded-aar\com.android.support\support-v4\20.0.0\res" />
     </dataSet>
     <dataSet config="main" >
-        <source path="F:\543\ShopWithMe\app\src\main\res" >
+        <source path="C:\Users\omx\Documents\GitHub\SI-543-group-project\ShopWithMe\app\src\main\res" >
             <file
                 name="filter"
-                path="F:\543\ShopWithMe\app\src\main\res\drawable\filter.jpg"
+                path="C:\Users\omx\Documents\GitHub\SI-543-group-project\ShopWithMe\app\src\main\res\drawable\filter.jpg"
                 qualifiers=""
                 type="drawable" />
             <file
                 name="jason"
-                path="F:\543\ShopWithMe\app\src\main\res\drawable\jason.png"
+                path="C:\Users\omx\Documents\GitHub\SI-543-group-project\ShopWithMe\app\src\main\res\drawable\jason.png"
                 qualifiers=""
                 type="drawable" />
             <file
                 name="mary"
-                path="F:\543\ShopWithMe\app\src\main\res\drawable\mary.png"
+                path="C:\Users\omx\Documents\GitHub\SI-543-group-project\ShopWithMe\app\src\main\res\drawable\mary.png"
                 qualifiers=""
                 type="drawable" />
             <file
                 name="mike"
-                path="F:\543\ShopWithMe\app\src\main\res\drawable\mike.jpg"
+                path="C:\Users\omx\Documents\GitHub\SI-543-group-project\ShopWithMe\app\src\main\res\drawable\mike.jpg"
                 qualifiers=""
                 type="drawable" />
             <file
                 name="nick"
-                path="F:\543\ShopWithMe\app\src\main\res\drawable\nick.png"
+                path="C:\Users\omx\Documents\GitHub\SI-543-group-project\ShopWithMe\app\src\main\res\drawable\nick.png"
                 qualifiers=""
                 type="drawable" />
             <file
                 name="reply"
-                path="F:\543\ShopWithMe\app\src\main\res\drawable\reply.jpg"
+                path="C:\Users\omx\Documents\GitHub\SI-543-group-project\ShopWithMe\app\src\main\res\drawable\reply.jpg"
                 qualifiers=""
                 type="drawable" />
             <file
                 name="sue"
-                path="F:\543\ShopWithMe\app\src\main\res\drawable\sue.png"
+                path="C:\Users\omx\Documents\GitHub\SI-543-group-project\ShopWithMe\app\src\main\res\drawable\sue.png"
                 qualifiers=""
                 type="drawable" />
             <file
                 name="user_1"
-                path="F:\543\ShopWithMe\app\src\main\res\drawable\user_1.png"
+                path="C:\Users\omx\Documents\GitHub\SI-543-group-project\ShopWithMe\app\src\main\res\drawable\user_1.png"
                 qualifiers=""
                 type="drawable" />
             <file
                 name="user_2"
-                path="F:\543\ShopWithMe\app\src\main\res\drawable\user_2.png"
+                path="C:\Users\omx\Documents\GitHub\SI-543-group-project\ShopWithMe\app\src\main\res\drawable\user_2.png"
                 qualifiers=""
                 type="drawable" />
             <file
                 name="user_3"
-                path="F:\543\ShopWithMe\app\src\main\res\drawable\user_3.png"
+                path="C:\Users\omx\Documents\GitHub\SI-543-group-project\ShopWithMe\app\src\main\res\drawable\user_3.png"
                 qualifiers=""
                 type="drawable" />
             <file
                 name="user_4"
-                path="F:\543\ShopWithMe\app\src\main\res\drawable\user_4.png"
+                path="C:\Users\omx\Documents\GitHub\SI-543-group-project\ShopWithMe\app\src\main\res\drawable\user_4.png"
                 qualifiers=""
                 type="drawable" />
             <file
                 name="user_5"
-                path="F:\543\ShopWithMe\app\src\main\res\drawable\user_5.jpg"
+                path="C:\Users\omx\Documents\GitHub\SI-543-group-project\ShopWithMe\app\src\main\res\drawable\user_5.jpg"
                 qualifiers=""
                 type="drawable" />
             <file
                 name="ic_launcher"
-                path="F:\543\ShopWithMe\app\src\main\res\drawable-hdpi\ic_launcher.png"
+                path="C:\Users\omx\Documents\GitHub\SI-543-group-project\ShopWithMe\app\src\main\res\drawable-hdpi\ic_launcher.png"
                 qualifiers="hdpi-v4"
                 type="drawable" />
             <file
                 name="ic_launcher"
-                path="F:\543\ShopWithMe\app\src\main\res\drawable-mdpi\ic_launcher.png"
+                path="C:\Users\omx\Documents\GitHub\SI-543-group-project\ShopWithMe\app\src\main\res\drawable-mdpi\ic_launcher.png"
                 qualifiers="mdpi-v4"
                 type="drawable" />
             <file
                 name="ic_launcher"
-                path="F:\543\ShopWithMe\app\src\main\res\drawable-xhdpi\ic_launcher.png"
+                path="C:\Users\omx\Documents\GitHub\SI-543-group-project\ShopWithMe\app\src\main\res\drawable-xhdpi\ic_launcher.png"
                 qualifiers="xhdpi-v4"
                 type="drawable" />
             <file
                 name="ic_launcher"
-                path="F:\543\ShopWithMe\app\src\main\res\drawable-xxhdpi\ic_launcher.png"
+                path="C:\Users\omx\Documents\GitHub\SI-543-group-project\ShopWithMe\app\src\main\res\drawable-xxhdpi\ic_launcher.png"
                 qualifiers="xxhdpi-v4"
                 type="drawable" />
             <file
                 name="activity_conversation"
-                path="F:\543\ShopWithMe\app\src\main\res\layout\activity_conversation.xml"
+                path="C:\Users\omx\Documents\GitHub\SI-543-group-project\ShopWithMe\app\src\main\res\layout\activity_conversation.xml"
                 qualifiers=""
                 type="layout" />
             <file
                 name="activity_filter"
-                path="F:\543\ShopWithMe\app\src\main\res\layout\activity_filter.xml"
+                path="C:\Users\omx\Documents\GitHub\SI-543-group-project\ShopWithMe\app\src\main\res\layout\activity_filter.xml"
                 qualifiers=""
                 type="layout" />
             <file
                 name="activity_home_screen"
-                path="F:\543\ShopWithMe\app\src\main\res\layout\activity_home_screen.xml"
+                path="C:\Users\omx\Documents\GitHub\SI-543-group-project\ShopWithMe\app\src\main\res\layout\activity_home_screen.xml"
                 qualifiers=""
                 type="layout" />
             <file
                 name="activity_main"
-                path="F:\543\ShopWithMe\app\src\main\res\layout\activity_main.xml"
+                path="C:\Users\omx\Documents\GitHub\SI-543-group-project\ShopWithMe\app\src\main\res\layout\activity_main.xml"
                 qualifiers=""
                 type="layout" />
             <file
                 name="activity_message"
-                path="F:\543\ShopWithMe\app\src\main\res\layout\activity_message.xml"
+                path="C:\Users\omx\Documents\GitHub\SI-543-group-project\ShopWithMe\app\src\main\res\layout\activity_message.xml"
                 qualifiers=""
                 type="layout" />
             <file
                 name="activity_new_post"
-                path="F:\543\ShopWithMe\app\src\main\res\layout\activity_new_post.xml"
+                path="C:\Users\omx\Documents\GitHub\SI-543-group-project\ShopWithMe\app\src\main\res\layout\activity_new_post.xml"
                 qualifiers=""
                 type="layout" />
             <file
                 name="activity_profile_display"
-                path="F:\543\ShopWithMe\app\src\main\res\layout\activity_profile_display.xml"
+                path="C:\Users\omx\Documents\GitHub\SI-543-group-project\ShopWithMe\app\src\main\res\layout\activity_profile_display.xml"
                 qualifiers=""
                 type="layout" />
             <file
                 name="activity_profile_edit"
-                path="F:\543\ShopWithMe\app\src\main\res\layout\activity_profile_edit.xml"
+                path="C:\Users\omx\Documents\GitHub\SI-543-group-project\ShopWithMe\app\src\main\res\layout\activity_profile_edit.xml"
                 qualifiers=""
                 type="layout" />
             <file
                 name="fragment_alter"
-                path="F:\543\ShopWithMe\app\src\main\res\layout\fragment_alter.xml"
+                path="C:\Users\omx\Documents\GitHub\SI-543-group-project\ShopWithMe\app\src\main\res\layout\fragment_alter.xml"
                 qualifiers=""
                 type="layout" />
             <file
                 name="fragment_reply"
-                path="F:\543\ShopWithMe\app\src\main\res\layout\fragment_reply.xml"
+                path="C:\Users\omx\Documents\GitHub\SI-543-group-project\ShopWithMe\app\src\main\res\layout\fragment_reply.xml"
                 qualifiers=""
                 type="layout" />
             <file
                 name="message_list_item"
-                path="F:\543\ShopWithMe\app\src\main\res\layout\message_list_item.xml"
+                path="C:\Users\omx\Documents\GitHub\SI-543-group-project\ShopWithMe\app\src\main\res\layout\message_list_item.xml"
                 qualifiers=""
                 type="layout" />
             <file
                 name="my_list_item"
-                path="F:\543\ShopWithMe\app\src\main\res\layout\my_list_item.xml"
+                path="C:\Users\omx\Documents\GitHub\SI-543-group-project\ShopWithMe\app\src\main\res\layout\my_list_item.xml"
                 qualifiers=""
                 type="layout" />
             <file
                 name="reply_list_item"
-                path="F:\543\ShopWithMe\app\src\main\res\layout\reply_list_item.xml"
+                path="C:\Users\omx\Documents\GitHub\SI-543-group-project\ShopWithMe\app\src\main\res\layout\reply_list_item.xml"
                 qualifiers=""
                 type="layout" />
             <file
                 name="content_menu"
-                path="F:\543\ShopWithMe\app\src\main\res\menu\content_menu.xml"
+                path="C:\Users\omx\Documents\GitHub\SI-543-group-project\ShopWithMe\app\src\main\res\menu\content_menu.xml"
                 qualifiers=""
                 type="menu" />
             <file
                 name="conversation"
-                path="F:\543\ShopWithMe\app\src\main\res\menu\conversation.xml"
+                path="C:\Users\omx\Documents\GitHub\SI-543-group-project\ShopWithMe\app\src\main\res\menu\conversation.xml"
                 qualifiers=""
                 type="menu" />
             <file
                 name="conversation_content_menu"
-                path="F:\543\ShopWithMe\app\src\main\res\menu\conversation_content_menu.xml"
+                path="C:\Users\omx\Documents\GitHub\SI-543-group-project\ShopWithMe\app\src\main\res\menu\conversation_content_menu.xml"
                 qualifiers=""
                 type="menu" />
             <file
                 name="filter"
-                path="F:\543\ShopWithMe\app\src\main\res\menu\filter.xml"
+                path="C:\Users\omx\Documents\GitHub\SI-543-group-project\ShopWithMe\app\src\main\res\menu\filter.xml"
                 qualifiers=""
                 type="menu" />
             <file
                 name="home_screen"
-                path="F:\543\ShopWithMe\app\src\main\res\menu\home_screen.xml"
+                path="C:\Users\omx\Documents\GitHub\SI-543-group-project\ShopWithMe\app\src\main\res\menu\home_screen.xml"
                 qualifiers=""
                 type="menu" />
             <file
                 name="main"
-                path="F:\543\ShopWithMe\app\src\main\res\menu\main.xml"
+                path="C:\Users\omx\Documents\GitHub\SI-543-group-project\ShopWithMe\app\src\main\res\menu\main.xml"
                 qualifiers=""
                 type="menu" />
             <file
                 name="message"
-                path="F:\543\ShopWithMe\app\src\main\res\menu\message.xml"
+                path="C:\Users\omx\Documents\GitHub\SI-543-group-project\ShopWithMe\app\src\main\res\menu\message.xml"
                 qualifiers=""
                 type="menu" />
             <file
                 name="new_post"
-                path="F:\543\ShopWithMe\app\src\main\res\menu\new_post.xml"
+                path="C:\Users\omx\Documents\GitHub\SI-543-group-project\ShopWithMe\app\src\main\res\menu\new_post.xml"
                 qualifiers=""
                 type="menu" />
             <file
                 name="profile"
-                path="F:\543\ShopWithMe\app\src\main\res\menu\profile.xml"
+                path="C:\Users\omx\Documents\GitHub\SI-543-group-project\ShopWithMe\app\src\main\res\menu\profile.xml"
                 qualifiers=""
                 type="menu" />
             <file
                 name="profile_display"
-                path="F:\543\ShopWithMe\app\src\main\res\menu\profile_display.xml"
+                path="C:\Users\omx\Documents\GitHub\SI-543-group-project\ShopWithMe\app\src\main\res\menu\profile_display.xml"
                 qualifiers=""
                 type="menu" />
             <file
                 name="profile_edit"
-                path="F:\543\ShopWithMe\app\src\main\res\menu\profile_edit.xml"
+                path="C:\Users\omx\Documents\GitHub\SI-543-group-project\ShopWithMe\app\src\main\res\menu\profile_edit.xml"
                 qualifiers=""
                 type="menu" />
             <file
-                path="F:\543\ShopWithMe\app\src\main\res\values\dimens.xml"
+                path="C:\Users\omx\Documents\GitHub\SI-543-group-project\ShopWithMe\app\src\main\res\values\dimens.xml"
                 qualifiers="" >
                 <dimen name="activity_horizontal_margin" >16dp
                 </dimen>
@@ -215,7 +215,7 @@
                 </dimen>
             </file>
             <file
-                path="F:\543\ShopWithMe\app\src\main\res\values\strings.xml"
+                path="C:\Users\omx\Documents\GitHub\SI-543-group-project\ShopWithMe\app\src\main\res\values\strings.xml"
                 qualifiers="" >
                 <string name="Welcome" >Welcome
                 </string>
@@ -274,9 +274,9 @@ $$$$
                 </string>
                 <string name="title_activity_conversation" >ConversationActivity
                 </string>
-                <string name="categories_prompt" >Categories
-                </string>
                 <string name="Submit" >Submit
+                </string>
+                <string name="categories_prompt" >Categories
                 </string>
                 <string name="clothing" >Clothing
                 </string>
@@ -284,9 +284,9 @@ $$$$
                 </string>
                 <string name="title_activity_profile_display" >Profile_display
                 </string>
-                <string name="nicks_reply" >Nick: Yes! What time and where?
-                </string>
                 <string name="Filter" >Filter
+                </string>
+                <string name="nicks_reply" >Nick: Yes! What time and where?
                 </string>
                 <string name="title_activity_filter" >FilterActivity
                 </string>
@@ -373,7 +373,7 @@ $$$
                 </string>
             </file>
             <file
-                path="F:\543\ShopWithMe\app\src\main\res\values\styles.xml"
+                path="C:\Users\omx\Documents\GitHub\SI-543-group-project\ShopWithMe\app\src\main\res\values\styles.xml"
                 qualifiers="" >
 
                 <style
@@ -395,7 +395,7 @@ $$$
                 </style>
             </file>
             <file
-                path="F:\543\ShopWithMe\app\src\main\res\values-v11\styles.xml"
+                path="C:\Users\omx\Documents\GitHub\SI-543-group-project\ShopWithMe\app\src\main\res\values-v11\styles.xml"
                 qualifiers="v11" >
 
                 <style
@@ -406,7 +406,7 @@ $$$
                 </style>
             </file>
             <file
-                path="F:\543\ShopWithMe\app\src\main\res\values-v14\styles.xml"
+                path="C:\Users\omx\Documents\GitHub\SI-543-group-project\ShopWithMe\app\src\main\res\values-v14\styles.xml"
                 qualifiers="v14" >
 
                 <style
@@ -417,17 +417,17 @@ $$$
                 </style>
             </file>
             <file
-                path="F:\543\ShopWithMe\app\src\main\res\values-w820dp\dimens.xml"
+                path="C:\Users\omx\Documents\GitHub\SI-543-group-project\ShopWithMe\app\src\main\res\values-w820dp\dimens.xml"
                 qualifiers="w820dp-v13" >
                 <dimen name="activity_horizontal_margin" >64dp
                 </dimen>
             </file>
         </source>
-        <source path="F:\543\ShopWithMe\app\build\generated\res\rs\debug" />
-        <source path="F:\543\ShopWithMe\app\build\generated\res\generated\debug" />
+        <source path="C:\Users\omx\Documents\GitHub\SI-543-group-project\ShopWithMe\app\build\generated\res\rs\debug" />
+        <source path="C:\Users\omx\Documents\GitHub\SI-543-group-project\ShopWithMe\app\build\generated\res\generated\debug" />
     </dataSet>
     <dataSet config="debug" >
-        <source path="F:\543\ShopWithMe\app\src\debug\res" />
+        <source path="C:\Users\omx\Documents\GitHub\SI-543-group-project\ShopWithMe\app\src\debug\res" />
     </dataSet>
 
 </merger>

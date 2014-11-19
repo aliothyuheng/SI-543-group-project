@@ -17,7 +17,7 @@
     <string name="Message">Message to the Poster</string>
     <string name="Reply">Reply to this Post</string>
     <string name="Poster_profile">View poster profile</string>
-    <string name="Profile">Profile</string>
+    <string name="Profile">Edit Profile</string>
     <string name="Post">Post</string>
     <string name="Filter">Filter</string>
     <string name="title_activity_filter">FilterActivity</string>

@@ -4,7 +4,9 @@ import com.example.shopwithme.R;
 
 import android.app.Activity;
 import android.app.FragmentManager;
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -13,8 +15,15 @@ import android.widget.EditText;
 
 public class MainActivity extends Activity {
 
+    public static final String MyPREFERENCES = "MyPrefs" ;
+    public static final String name = "nameKey";
+    public static final String pass = "passwordKey";
+    SharedPreferences sharedpreferences;
+
     private EditText userName;
     private EditText password;
+    private String userNameText;
+    private String passwordText;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -44,13 +53,21 @@ public class MainActivity extends Activity {
 	public void Login(View view) {
         userName = (EditText) findViewById(R.id.UserNameTextbox);
         password = (EditText) findViewById(R.id.PasswordTextbox);
-        if (userName.getText().toString().equals("") || password.getText().toString().equals("")){
+        userNameText = userName.getText().toString().trim();
+        passwordText = password.getText().toString().trim();
+        if (userNameText.equals("") || passwordText.equals("")){
             FragmentManager fm = getFragmentManager();
             AlterFragment alter = new AlterFragment();
             alter.setRetainInstance(true);
             alter.show(fm, "fragment_alter");
         }
         else {
+            sharedpreferences=getSharedPreferences(MyPREFERENCES,
+                    Context.MODE_PRIVATE);
+            SharedPreferences.Editor editor = sharedpreferences.edit();
+            editor.putString(name, userNameText);
+            editor.putString(pass, passwordText);
+            editor.commit();
             Intent intent = new Intent(this, HomeScreenActivity.class);
             startActivity(intent);
         }

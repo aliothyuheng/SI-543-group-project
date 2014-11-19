@@ -20,7 +20,7 @@
         android:contentDescription="User Picture" />
 
     <EditText
-        android:id="@+id/editText1"
+        android:id="@+id/nameText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="15"
@@ -30,7 +30,7 @@
     </EditText>
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/locationText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="15"
@@ -41,7 +41,7 @@
     </EditText>
 
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/interestText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -51,7 +51,7 @@
     </EditText>
 
     <Spinner
-        android:id="@+id/spinner1"
+        android:id="@+id/budgetSpinner"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:prompt="@string/prompt"
@@ -59,10 +59,10 @@
         />
 
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/save"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Save" />
 
 </LinearLayout>
-<!-- From: file:/C:/Users/omx/Documents/GitHub/SI-543-group-project/ShopWithMe/app/src/main/res/layout/activity_profile_edit.xml -->
+<!-- From: file:/F:/543/ShopWithMe/app/src/main/res/layout/activity_profile_edit.xml -->

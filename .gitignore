@@ -1,21 +1,12 @@
 
 
 # Gradle files
-ShopWithMe\.gradle
-
-ShopWithMe\.idea
+.gradle/
+build/
 
 # Local configuration file (sdk path, etc)
-ShopWithMe\local.properties
+local.properties
 
-ShopWithMe\app\build
-
-ShopWithMe\app\app.iml
-
-ShopWithMe\build
-
-
-
-
+.idea/
 
 

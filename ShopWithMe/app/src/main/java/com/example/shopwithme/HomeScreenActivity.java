@@ -3,7 +3,9 @@ package com.example.shopwithme;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -15,8 +17,12 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.PopupMenu;
 import android.widget.TextView;
+import org.json.JSONException;
+import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
 
 public class HomeScreenActivity extends Activity {
     private ListView listview;
@@ -29,7 +35,7 @@ public class HomeScreenActivity extends Activity {
         getActionBar().setTitle("Home");
         listview = (ListView) findViewById(R.id.my_list_view);
         //initialize the list
-        initList();
+        setList();
         //set up a customAdapter
         CustomAdapter postAdapter = new CustomAdapter(this, postList, R.layout.my_list_item, new String[]{"name", "post", "image"},
                 new int[]{R.id.name, R.id.post, R.id.user_image});
@@ -76,6 +82,7 @@ public class HomeScreenActivity extends Activity {
         public ImageButton replyButton;
     }
 
+    /**
     //setup the initialized value for the post list
     public void initList() {
         HashMap<String, Object> map = new HashMap<String, Object>();
@@ -108,6 +115,7 @@ public class HomeScreenActivity extends Activity {
         map.put("image", R.drawable.mike);
         postList.add(map);
     }
+    **/
 
     //set up the customAdpater
     public class CustomAdapter extends BaseAdapter {
@@ -220,5 +228,32 @@ public class HomeScreenActivity extends Activity {
                 startActivity(intent);
             }
         });
+    }
+
+    public void setList(){
+        SharedPreferences sharedpreferences = getSharedPreferences(MainActivity.PostPref,
+                Context.MODE_PRIVATE);
+        String jsonString;
+        HashMap<String, Object> map;
+        Map<String, ?> allEntries = sharedpreferences.getAll();
+        for (Map.Entry<String, ?> entry : allEntries.entrySet()) {
+            Log.d("map values", entry.getKey() + ": " + entry.getValue().toString());
+            jsonString = entry.getValue().toString();
+            JSONObject jsonObject;
+            try {
+                jsonObject = new JSONObject(jsonString);
+                Iterator<String> keysItr = jsonObject.keys();
+                map = new HashMap<String, Object>();
+                while(keysItr.hasNext()) {
+                    String key = keysItr.next();
+                    Object value = jsonObject.get(key);
+                    map.put(key, value);
+                }
+                postList.add(map);
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+
+        }
     }
 }

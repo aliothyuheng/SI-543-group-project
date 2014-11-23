@@ -237,7 +237,6 @@ public class ConversationActivity extends Activity {
             map.put("post", replyContent);
             replyList.add(map);
             replyAdapter.notifyDataSetChanged();
-
         }
     }
 

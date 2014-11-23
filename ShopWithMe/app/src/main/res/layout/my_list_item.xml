@@ -37,7 +37,7 @@
         <ImageButton
             android:id="@+id/reply"
             android:layout_width="30dp"
-            android:layout_height="15dp"
+            android:layout_height="30dp"
             android:layout_below="@id/post"
             android:layout_alignRight="@id/post"
             android:background="@drawable/reply" />

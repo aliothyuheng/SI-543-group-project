@@ -5,32 +5,27 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
 import android.content.Intent;
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
-import android.widget.Spinner;
+import android.widget.ImageView;
 import android.widget.TextView;
-
-import org.w3c.dom.Text;
-
 
 public class profile_edit extends Activity {
 
     private String userName;
-    Button saveButton;
-    EditText nameText;
-    EditText locationText;
-    EditText interestText;
-    Spinner budgetSpinner;
+    private EditText nameText;
+    private ImageView userImage;
+    private SharedPreferences userSharedpreference;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile_edit);
         getActionBar().setTitle("Profile");
+
     }
 
 
@@ -61,5 +56,28 @@ public class profile_edit extends Activity {
             return true;
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    public void setupProfile(String name){
+        userSharedpreference = getSharedPreferences(MainActivity.UserPref,
+                Context.MODE_PRIVATE);
+        userName = userSharedpreference.getString(MainActivity.name, "");
+        nameText = (EditText) findViewById(R.id.nameText);
+        nameText.setText(userName);
+        userImage = (ImageView) findViewById(R.id.user_profile_image);
+        //automatically change the user's name based on the text passed in
+        Resources res = getResources();
+        //automatically change the user's image based on the name passed in
+        if (name.equals("sue")) {
+            userImage.setImageDrawable(res.getDrawable(R.drawable.sue));
+        } else if (name.equals("nick")) {
+            userImage.setImageDrawable(res.getDrawable(R.drawable.nick));
+        } else if (name.equals("mary")) {
+            userImage.setImageDrawable(res.getDrawable(R.drawable.mary));
+        } else if (name.equals("jason")) {
+            userImage.setImageDrawable(res.getDrawable(R.drawable.jason));
+        } else {
+            userImage.setImageDrawable(res.getDrawable(R.drawable.mike));
+        }
     }
 }

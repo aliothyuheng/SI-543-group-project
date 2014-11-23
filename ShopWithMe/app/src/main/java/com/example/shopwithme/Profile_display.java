@@ -68,7 +68,7 @@ public class Profile_display extends Activity {
             image.setImageDrawable(res.getDrawable(R.drawable.mary));
         } else if (name.equals("jason")) {
             image.setImageDrawable(res.getDrawable(R.drawable.jason));
-        } else if (name.equals("mike")) {
+        } else {
             image.setImageDrawable(res.getDrawable(R.drawable.mike));
         }
     }

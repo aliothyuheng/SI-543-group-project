@@ -36,21 +36,19 @@
 	        android:entries="@array/budget_array"
 	        android:prompt="@string/budget_prompt"/>
 	    
-	    <TextView 
+	    <TextView
 	        android:id="@+id/location"
 	        android:layout_width="match_parent"
 	        android:layout_height="wrap_content"
-	        android:text="Location: " 
+	        android:text="Location: "
 	        android:textSize="30sp"/>
 	    
-	    <EditText 
+	    <Spinner
 	        android:id="@+id/editLocation"
 	        android:layout_width="match_parent"
 	        android:layout_height="wrap_content"
-	        android:hint="Enter desired location..."
-	        android:imeOptions="actionDone"
-	        android:singleLine="true"
-	        />
+            android:entries="@array/city_arrays"
+            android:prompt="@string/city_prompt"/>
 	    
 	    <EditText 
 	        android:id="@+id/editPost"

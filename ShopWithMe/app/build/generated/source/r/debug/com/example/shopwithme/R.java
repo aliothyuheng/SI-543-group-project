@@ -76,7 +76,6 @@ public final class R {
         public static final int editText2=0x7f090028;
         public static final int editText3=0x7f090029;
         public static final int editText4=0x7f09002a;
-        public static final int imageView2=0x7f09002c;
         public static final int interestText=0x7f09002f;
         public static final int location=0x7f090022;
         public static final int locationText=0x7f09002e;
@@ -93,9 +92,10 @@ public final class R {
         public static final int reply_list_view=0x7f090001;
         public static final int save=0x7f090030;
         public static final int spinner1=0x7f090010;
-        public static final int textView1=0x7f09002b;
         public static final int user_image=0x7f090032;
         public static final int user_photo=0x7f090026;
+        public static final int user_profile=0x7f09002b;
+        public static final int user_profile_image=0x7f09002c;
     }
     public static final class layout {
         public static final int activity_conversation=0x7f030000;

@@ -52,7 +52,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/Submit" 
-        android:onClick="ConversationScreen"/>
+        android:onClick="message"/>
 
 </LinearLayout>
-<!-- From: file:/C:/Users/omx/Documents/GitHub/SI-543-group-project/ShopWithMe/app/src/main/res/layout/activity_message.xml -->
+<!-- From: file:/F:/543/ShopWithMe/app/src/main/res/layout/activity_message.xml -->

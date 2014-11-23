@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.app.FragmentManager;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.ContextMenu;
 import android.view.LayoutInflater;
@@ -18,6 +19,7 @@ import android.widget.EditText;
 
 import android.widget.ListView;
 
+import android.widget.SimpleAdapter;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -29,9 +31,9 @@ public class ConversationActivity extends Activity {
 
     private EditText replyText;
     private ListView replyListView;
-
+    private String userName;
     private ArrayList<HashMap<String, Object>> replyList = new ArrayList<HashMap<String, Object>>();
-
+    private SimpleAdapter replyAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,12 +41,18 @@ public class ConversationActivity extends Activity {
         setContentView(R.layout.activity_conversation);
         getActionBar().setTitle("Conversation");
         replyListView = (ListView) findViewById(R.id.reply_list_view);
+        initList();
+        replyAdapter = new SimpleAdapter(this, replyList, R.layout.message_list_item, new String[]
+                {"name", "post"},
+                new int[] {R.id.name, R.id.post});
+        replyListView.setAdapter(replyAdapter);
 
+        /**
         initList();
 
         CustomAdapter replyAdapter = new CustomAdapter(this, replyList, R.layout.reply_list_item,
                 new String[] {"name", "reply"}, new int[] {R.id.name, R.id.reply});
-        replyListView.setAdapter(replyAdapter);
+        replyListView.setAdapter(replyAdapter); **/
 
 
         Intent intent = getIntent();
@@ -52,6 +60,7 @@ public class ConversationActivity extends Activity {
         String postContent = intent.getStringExtra("post");
         String posterName = intent.getStringExtra("poster");
         tx.setText(posterName + ": " + postContent);
+
 /**
  TextView tv_2 = (TextView) findViewById(R.id.nicks_reply);
  registerForContextMenu(tv_2);
@@ -114,6 +123,7 @@ public class ConversationActivity extends Activity {
         return super.onOptionsItemSelected(item);
     }
 
+ /**
     static class ViewHolder {
         //create a view holder class to hold all the views of one post
         public TextView name;
@@ -208,7 +218,7 @@ public class ConversationActivity extends Activity {
             }
         });
     }
-
+**/
     public void Reply(View view) {
         replyText = (EditText) findViewById(R.id.replyBox);
         if (replyText.getText().toString().equals("")) {
@@ -218,9 +228,30 @@ public class ConversationActivity extends Activity {
             alter.show(fm, "fragment_reply");
         }
         else {
-            Intent intent = new Intent(this, ConversationActivity.class);
-            startActivity(intent);
+            SharedPreferences sharedpreferences = getSharedPreferences(MainActivity.UserPref,
+                    Context.MODE_PRIVATE);
+            userName = sharedpreferences.getString(MainActivity.name, "");
+            String replyContent = replyText.getText().toString();
+            HashMap<String, Object> map = new HashMap<String, Object>();
+            map.put("name", userName);
+            map.put("post", replyContent);
+            replyList.add(map);
+            replyAdapter.notifyDataSetChanged();
+
         }
+    }
+
+    public void initList () {
+        HashMap<String, Object> map = new HashMap<String, Object>();
+        map.put("name", "sue");
+        map.put("post", "Hi, I'd really like to meet up with you for some shoe shopping. Any interest?");
+        replyList.add(map);
+
+        map = new HashMap<String, Object>();
+        map.put("name", "mary");
+        map.put("post", "Sure! Where would you like to go?");
+        replyList.add(map);
+
     }
 
     // text from reply box gets put on screen when user submits it

@@ -79,31 +79,31 @@ public class HomeScreenActivity extends Activity {
     //setup the initialized value for the post list
     public void initList() {
         HashMap<String, Object> map = new HashMap<String, Object>();
-        map.put("name", "Sue");
+        map.put("name", "sue");
         map.put("post", "I need to shop for some shoes. Would anyone like to join?");
         map.put("image", R.drawable.sue);
         postList.add(map);
 
         map = new HashMap<String, Object>();
-        map.put("name", "Nick");
+        map.put("name", "nick");
         map.put("post", "I'm looking for some good music. Anyone want to go to a record store?");
         map.put("image", R.drawable.nick);
         postList.add(map);
 
         map = new HashMap<String, Object>();
-        map.put("name", "Mary");
+        map.put("name", "mary");
         map.put("post", "Anyone want to go clothes shopping? I found a new store on Liberty.");
         map.put("image", R.drawable.mary);
         postList.add(map);
 
         map = new HashMap<String, Object>();
-        map.put("name", "Jason");
+        map.put("name", "jason");
         map.put("post", "I want to find some good cajun food. Anyone want to check out midtown with me?");
         map.put("image", R.drawable.jason);
         postList.add(map);
 
         map = new HashMap<String, Object>();
-        map.put("name", "Mike");
+        map.put("name", "mike");
         map.put("post", "I'm looking for some good music. Anyone want to go to a record store?");
         map.put("image", R.drawable.mike);
         postList.add(map);

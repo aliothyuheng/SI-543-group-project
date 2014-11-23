@@ -1,11 +1,15 @@
 package com.example.shopwithme;
 
 import android.app.Activity;
+import android.app.FragmentManager;
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
 
@@ -19,7 +23,10 @@ public class MessageActivity extends Activity {
     //list items will be added programatically
     //List<Map<String, String>> personName = new ArrayList<~>();
     private ListView listview;
-    private ArrayList<HashMap<String, Object>> postList = new ArrayList<HashMap<String, Object>>();
+    private ArrayList<HashMap<String, Object>> messageList = new ArrayList<HashMap<String, Object>>();
+    private EditText message;
+    private String userName;
+    SimpleAdapter messageAdapter;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -27,16 +34,13 @@ public class MessageActivity extends Activity {
 		setContentView(R.layout.activity_message);
 		getActionBar().setTitle("Message");
         listview = (ListView) findViewById(R.id.message_list_view);
-
-        //initialize the list
-        initList();
         //registerForContextMenu ((ListView) findViewById(R.id.listView));
         //ListView personNameListView = (ListView) findViewById(R.id.listView);
-        SimpleAdapter postAdapter = new SimpleAdapter(this, postList, R.layout.message_list_item, new String[]
+        messageAdapter = new SimpleAdapter(this, messageList, R.layout.message_list_item, new String[]
                 {"name", "post"},
                     new int[] {R.id.name, R.id.post});
 
-        listview.setAdapter(postAdapter);
+        listview.setAdapter(messageAdapter);
 	}
 
 	@Override
@@ -66,23 +70,27 @@ public class MessageActivity extends Activity {
 		}
 		return super.onOptionsItemSelected(item);
 	}
-	
-	
-	public void ConversationScreen(View view) {
-		Intent intent = new Intent(this, MessageActivity.class);
-		startActivity(intent);
-	}
-    public void initList () {
-        HashMap<String, Object> map = new HashMap<String, Object>();
-        map.put("name", "Sue");
-        map.put("post", "Hi, I'd really like to meet up with you for some shoe shopping. Any interest?");
-        postList.add(map);
 
-        map = new HashMap<String, Object>();
-        map.put("name", "Mary");
-        map.put("post", "Sure! Where would you like to go?");
-        postList.add(map);
+    public void message(View view) {
+        message = (EditText) findViewById(R.id.messageBox);
+        if (message.getText().toString().equals("")) {
+            FragmentManager fm = getFragmentManager();
+            ReplyFragment alter = new ReplyFragment();
+            alter.setRetainInstance(true);
+            alter.show(fm, "fragment_reply");
+        }
+        else {
+            SharedPreferences sharedpreferences = getSharedPreferences(MainActivity.UserPref,
+                    Context.MODE_PRIVATE);
+            userName = sharedpreferences.getString(MainActivity.name, "");
+            String replyContent = message.getText().toString();
+            HashMap<String, Object> map = new HashMap<String, Object>();
+            map.put("name", userName);
+            map.put("post", replyContent);
+            messageList.add(map);
+            messageAdapter.notifyDataSetChanged();
 
+        }
     }
 
 

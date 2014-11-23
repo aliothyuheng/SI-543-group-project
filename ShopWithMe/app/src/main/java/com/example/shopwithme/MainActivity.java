@@ -15,7 +15,7 @@ import android.widget.EditText;
 
 public class MainActivity extends Activity {
 
-    public static final String MyPREFERENCES = "MyPrefs" ;
+    public static final String UserPref = "UserPref" ;
     public static final String name = "nameKey";
     public static final String pass = "passwordKey";
     SharedPreferences sharedpreferences;
@@ -62,7 +62,7 @@ public class MainActivity extends Activity {
             alter.show(fm, "fragment_alter");
         }
         else {
-            sharedpreferences=getSharedPreferences(MyPREFERENCES,
+            sharedpreferences=getSharedPreferences(UserPref,
                     Context.MODE_PRIVATE);
             SharedPreferences.Editor editor = sharedpreferences.edit();
             editor.putString(name, userNameText);

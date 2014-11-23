@@ -60,15 +60,15 @@ public class Profile_display extends Activity {
         tx.setText("Name: " + name);
         Resources res = getResources();
         //automatically change the user's image based on the name passed in
-        if (name.equals("Sue")) {
+        if (name.equals("sue")) {
             image.setImageDrawable(res.getDrawable(R.drawable.sue));
-        } else if (name.equals("Nick")) {
+        } else if (name.equals("nick")) {
             image.setImageDrawable(res.getDrawable(R.drawable.nick));
-        } else if (name.equals("Mary")) {
+        } else if (name.equals("mary")) {
             image.setImageDrawable(res.getDrawable(R.drawable.mary));
-        } else if (name.equals("Jason")) {
+        } else if (name.equals("jason")) {
             image.setImageDrawable(res.getDrawable(R.drawable.jason));
-        } else if (name.equals("Mike")) {
+        } else if (name.equals("mike")) {
             image.setImageDrawable(res.getDrawable(R.drawable.mike));
         }
     }

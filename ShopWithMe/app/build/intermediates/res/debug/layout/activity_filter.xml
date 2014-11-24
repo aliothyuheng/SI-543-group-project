@@ -29,99 +29,54 @@
         android:layout_marginTop="82dp" >
         
     	<TextView
-            android:id="@+id/BudgetLabel"
+            android:id="@+id/budgetLabel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
-            android:text="@string/Budget" 
+            android:text="Budget"
             android:textAppearance="?android:attr/textAppearanceMedium"/>
 
-    	<CheckBox
-       		android:id="@+id/PriceBox_1"
-        	android:layout_width="70dp"
-        	android:layout_height="wrap_content"
-        	android:layout_marginStart="20dp"
-        	android:layout_below="@+id/BudgetLabel"
-        	android:text="@string/$" />
-    
-    	<CheckBox
-        	android:id="@+id/PriceBox_2"
-        	android:layout_width="70dp"
-        	android:layout_height="wrap_content"
-        	android:layout_marginStart="20dp"
-        	android:layout_below="@+id/BudgetLabel"
-        	android:layout_toEndOf="@+id/PriceBox_1"
-        	android:text="@string/$$" />
-    
-    	<CheckBox
-        	android:id="@+id/PriceBox_3"
-        	android:layout_width="70dp"
-        	android:layout_height="wrap_content"
-        	android:layout_marginStart="20dp"
-        	android:layout_below="@+id/BudgetLabel"
-        	android:layout_toEndOf="@+id/PriceBox_2"
-        	android:text="@string/$$$" />
+        <Spinner
+            android:id="@+id/budgetFilterSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="20dp"
+            android:layout_below="@id/budgetLabel"/>
+
     
     	<TextView
-            android:id="@+id/CatogoryLabel"
+            android:id="@+id/categoryLabel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="30dp"
             android:layout_marginStart="20dp"
-            android:layout_below="@+id/PriceBox_1"
-            android:text="@string/Catoroty" 
+            android:layout_below="@id/budgetFilterSpinner"
+            android:text="Category"
             android:textAppearance="?android:attr/textAppearanceMedium"/>
-    
-    	<CheckBox
-        	android:id="@+id/CatogoryBox_1"
-        	android:layout_width="wrap_content"
-        	android:layout_height="wrap_content"
-        	android:layout_marginStart="20dp"
-        	android:layout_below="@+id/CatogoryLabel"
-        	android:text="@string/clothing" />
-    
-    	<CheckBox
-        	android:id="@+id/CatogoryBox_2"
-        	android:layout_width="wrap_content"
-        	android:layout_height="wrap_content"
-        	android:layout_marginStart="20dp"
-        	android:layout_below="@+id/CatogoryBox_1"
-        	android:text="@string/food" />
-    
-    	<CheckBox
-        	android:id="@+id/CatogoryBox_3"
-        	android:layout_width="wrap_content"
-        	android:layout_height="wrap_content"
-        	android:layout_marginStart="20dp"
-        	android:layout_below="@+id/CatogoryBox_2"
-        	android:text="@string/music" />
-    
-    	<CheckBox
-        	android:id="@+id/CatogoryBox_4"
-        	android:layout_width="wrap_content"
-        	android:layout_height="wrap_content"
-        	android:layout_marginStart="20dp"
-        	android:layout_below="@+id/CatogoryBox_3"
-        	android:text="@string/souvenir" />
-    
-     	<TextView
-            android:id="@+id/LocationLabel"
+
+        <Spinner
+            android:id="@+id/categoryFilterSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="20dp"
+            android:layout_below="@id/categoryLabel"/>
+
+        <TextView
+            android:id="@+id/locationLabel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="30dp"
             android:layout_marginStart="20dp"
-            android:layout_below="@+id/CatogoryBox_4"
-            android:text="@string/Location" 
+            android:layout_below="@id/categoryFilterSpinner"
+            android:text="location"
             android:textAppearance="?android:attr/textAppearanceMedium"/>
-     	
-     	<Spinner
-	    	android:id="@+id/spinner1"
-	    	android:layout_width="match_parent"
-	    	android:layout_height="wrap_content"
-	    	android:layout_marginStart="20dp"
-	    	android:layout_below="@+id/LocationLabel"
-	    	android:entries="@array/city_arrays"
-            android:prompt="@string/city_prompt"  />
+
+        <Spinner
+            android:id="@+id/locationFilterSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="20dp"
+            android:layout_below="@id/locationLabel"/>
 
 	</RelativeLayout>
 

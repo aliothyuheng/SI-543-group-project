@@ -4,23 +4,6 @@
     <!-- From: file:/F:/543/ShopWithMe/app/src/main/res/values/strings.xml -->
     <eat-comment />
 
-    <string-array name="budget_array">
-        <item>$</item>
-        <item>$$</item>
-        <item>$$$</item>
-    </string-array>
-    <string-array name="categories_array">
-        <item>Clothing</item>
-        <item>Food</item>
-        <item>Music</item>
-        <item>Shoes</item>
-    </string-array>
-    <string-array name="city_arrays">
-        <item>Ann Arbor</item>
-        <item>New York</item>
-        <item>Chicago</item>
-        <item>Los Angeles</item>
-    </string-array>
     <string-array name="entries">
         <item>Budget</item>
         <item>$</item>
@@ -55,9 +38,7 @@
     <string name="Welcome">Welcome</string>
     <string name="action_settings">Settings</string>
     <string name="app_name">ShopWithMe</string>
-    <string name="budget_prompt">Budget</string>
     <string name="categories_prompt">Categories</string>
-    <string name="city_prompt">Choose a city</string>
     <string name="clothing">Clothing</string>
     <string name="food">Food</string>
     <string name="forget_password">forget password</string>

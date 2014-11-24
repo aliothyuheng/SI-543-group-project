@@ -39,29 +39,6 @@
     <string name="marys_post">Mary: Goin to shop for shoes. Anyone want to join?</string>
     <string name="nicks_reply">Nick: Yes! What time and where?</string>
     <string name="sarahs_reply">Sarah: I would like to go too!</string>
-
-    <string-array name="categories_array">
-        <item>Clothing</item>
-        <item>Food</item>
-        <item>Music</item>
-        <item>Shoes</item>
-    </string-array>
-    <string-array name="budget_array">
-        <item>$</item>
-        <item>$$</item>
-        <item>$$$</item>
-    </string-array>
-
-    <string name="budget_prompt">Budget</string>
-    <string name="city_prompt">Choose a city</string>
-
-    <string-array name="city_arrays">
-        <item>Ann Arbor</item>
-        <item>New York</item>
-        <item>Chicago</item>
-        <item>Los Angeles</item>
-    </string-array>
-
     <string name="title_activity_profile">ProfileActivity</string>
     <string name="prompt">Budget</string>
 

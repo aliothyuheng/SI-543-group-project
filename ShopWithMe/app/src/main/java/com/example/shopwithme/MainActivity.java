@@ -88,7 +88,11 @@ public class MainActivity extends Activity {
         HashMap<String, Object> map = new HashMap<String, Object>();
         map.put("name", "sue");
         map.put("post", "I need to shop for some shoes. Would anyone like to join?");
+        map.put("budget", "$$");
+        map.put("category", "Shoes");
+        map.put("location", "Ann Arbor");
         map.put("image", R.drawable.sue);
+        map.put("display", true);
         JSONObject jsonObject = new JSONObject(map);
         String jsonString = jsonObject.toString();
         editor.putString("post_1", jsonString);
@@ -97,6 +101,10 @@ public class MainActivity extends Activity {
         map.put("name", "nick");
         map.put("post", "I'm looking for some good music. Anyone want to go to a record store?");
         map.put("image", R.drawable.nick);
+        map.put("budget", "$");
+        map.put("category", "Music");
+        map.put("location", "Ann Arbor");
+        map.put("display", true);
         jsonObject = new JSONObject(map);
         jsonString = jsonObject.toString();
         editor.putString("post_2", jsonString);
@@ -104,7 +112,11 @@ public class MainActivity extends Activity {
         map = new HashMap<String, Object>();
         map.put("name", "mary");
         map.put("post", "Anyone want to go clothes shopping? I found a new store on Liberty.");
+        map.put("budget", "$$$");
+        map.put("category", "Clothing");
+        map.put("location", "Ann Arbor");
         map.put("image", R.drawable.mary);
+        map.put("display", true);
         jsonObject = new JSONObject(map);
         jsonString = jsonObject.toString();
         editor.putString("post_3", jsonString);
@@ -112,7 +124,11 @@ public class MainActivity extends Activity {
         map = new HashMap<String, Object>();
         map.put("name", "jason");
         map.put("post", "I want to find some good cajun food. Anyone want to check out midtown with me?");
+        map.put("budget", "$");
+        map.put("location", "Ann Arbor");
+        map.put("category", "Food");
         map.put("image", R.drawable.jason);
+        map.put("display", true);
         jsonObject = new JSONObject(map);
         jsonString = jsonObject.toString();
         editor.putString("post_4", jsonString);
@@ -121,6 +137,10 @@ public class MainActivity extends Activity {
         map.put("name", "mike");
         map.put("post", "I'm looking for some good music. Anyone want to go to a record store?");
         map.put("image", R.drawable.mike);
+        map.put("budget", "$");
+        map.put("category", "Music");
+        map.put("location", "New York");
+        map.put("display", true);
         jsonObject = new JSONObject(map);
         jsonString = jsonObject.toString();
         editor.putString("post_5", jsonString);

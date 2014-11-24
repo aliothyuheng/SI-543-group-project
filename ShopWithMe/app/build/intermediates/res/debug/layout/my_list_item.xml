@@ -22,9 +22,36 @@
 
         <TextView
             android:id="@+id/name"
-            android:layout_width="70dp"
+            android:layout_width="60dp"
             android:layout_height="30dp"
             android:textSize="20dp"
+            android:textColor="#0066FF"
+            android:textStyle="italic"/>
+
+        <TextView
+            android:id="@+id/budget"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_toRightOf="@id/name"
+            android:textSize="15dp"
+            android:textColor="#0066FF"
+            android:textStyle="italic"/>
+
+        <TextView
+            android:id="@+id/category"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_toRightOf="@id/budget"
+            android:textSize="15dp"
+            android:textColor="#0066FF"
+            android:textStyle="italic"/>
+
+        <TextView
+            android:id="@+id/location"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:layout_toRightOf="@id/category"
+            android:textSize="15dp"
             android:textColor="#0066FF"
             android:textStyle="italic"/>
 
@@ -35,7 +62,7 @@
             android:layout_below="@id/name" />
 
         <ImageButton
-            android:id="@+id/reply"
+            android:id="@+id/replyButton"
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_below="@id/post"

@@ -5,7 +5,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -37,8 +36,9 @@ public class HomeScreenActivity extends Activity {
         //initialize the list
         setList();
         //set up a customAdapter
-        CustomAdapter postAdapter = new CustomAdapter(this, postList, R.layout.my_list_item, new String[]{"name", "post", "image"},
-                new int[]{R.id.name, R.id.post, R.id.user_image});
+        CustomAdapter postAdapter = new CustomAdapter(this, postList, R.layout.my_list_item,
+                new String[]{"name", "post", "budget", "category", "location", "image"},
+                new int[]{R.id.name, R.id.post, R.id.budget, R.id.category, R.id.location, R.id.user_image});
         //add the customAdapter to the listview
         listview.setAdapter(postAdapter);
     }
@@ -59,6 +59,9 @@ public class HomeScreenActivity extends Activity {
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
         if (id == R.id.action_home) {
+            initPostList();
+            Intent intent = new Intent(this, HomeScreenActivity.class);
+            startActivity(intent);
             return true;
         } else if (id == R.id.action_post) {
             Intent intent = new Intent(this, NewPostActivity.class);
@@ -67,9 +70,11 @@ public class HomeScreenActivity extends Activity {
         } else if (id == R.id.action_profile) {
             Intent intent = new Intent(this, profile_edit.class);
             startActivity(intent);
+            return true;
         } else if (id == R.id.action_filter) {
             Intent intent = new Intent(this, FilterActivity.class);
             startActivity(intent);
+            return true;
         }
         return super.onOptionsItemSelected(item);
     }
@@ -78,6 +83,9 @@ public class HomeScreenActivity extends Activity {
         //create a view holder class to hold all the views of one post
         public TextView name;
         public TextView post;
+        public TextView budget;
+        public TextView category;
+        public TextView locationText;
         public ImageView userImage;
         public ImageButton replyButton;
     }
@@ -165,8 +173,11 @@ public class HomeScreenActivity extends Activity {
                 holder = new ViewHolder();
                 holder.name = (TextView) convertView.findViewById(valueViewID[0]);
                 holder.post = (TextView) convertView.findViewById(valueViewID[1]);
-                holder.userImage = (ImageView) convertView.findViewById(valueViewID[2]);
-                holder.replyButton = (ImageButton) convertView.findViewById(R.id.reply);
+                holder.budget = (TextView) convertView.findViewById(valueViewID[2]);
+                holder.category = (TextView) convertView.findViewById(valueViewID[3]);
+                holder.locationText = (TextView) convertView.findViewById(valueViewID[4]);
+                holder.userImage = (ImageView) convertView.findViewById(valueViewID[5]);
+                holder.replyButton = (ImageButton) convertView.findViewById(R.id.replyButton);
                 convertView.setTag(holder);
             }
 
@@ -175,9 +186,15 @@ public class HomeScreenActivity extends Activity {
             if (appInfo != null) {
                 String posterName = (String) appInfo.get(keyString[0]);
                 String postContent = (String) appInfo.get(keyString[1]);
-                int imageId = (Integer) appInfo.get(keyString[2]);
+                String budgetContent = (String) appInfo.get(keyString[2]);
+                String categoryContent = (String) appInfo.get(keyString[3]);
+                String locationContent = (String) appInfo.get(keyString[4]);
+                int imageId = (Integer) appInfo.get(keyString[5]);
                 holder.name.setText(posterName);
                 holder.post.setText(postContent);
+                holder.budget.setText(budgetContent);
+                holder.category.setText(categoryContent);
+                holder.locationText.setText(locationContent);
                 holder.userImage.setImageDrawable(holder.userImage.getResources().getDrawable(imageId));
                 //set up pop menu for reply button
                 setPopup(holder.replyButton, posterName, postContent);
@@ -234,11 +251,12 @@ public class HomeScreenActivity extends Activity {
         SharedPreferences sharedpreferences = getSharedPreferences(MainActivity.PostPref,
                 Context.MODE_PRIVATE);
         String jsonString;
+        String mapKey;
         HashMap<String, Object> map;
-        Map<String, ?> allEntries = sharedpreferences.getAll();
-        for (Map.Entry<String, ?> entry : allEntries.entrySet()) {
-            Log.d("map values", entry.getKey() + ": " + entry.getValue().toString());
-            jsonString = entry.getValue().toString();
+        int number = sizeOfSharedPrefs(sharedpreferences);
+        for (int i=number; i>=1; i--) {
+            mapKey = "post_" + i;
+            jsonString = sharedpreferences.getString(mapKey, "");
             JSONObject jsonObject;
             try {
                 jsonObject = new JSONObject(jsonString);
@@ -249,11 +267,51 @@ public class HomeScreenActivity extends Activity {
                     Object value = jsonObject.get(key);
                     map.put(key, value);
                 }
-                postList.add(map);
+                if (map.get("display").equals(true)){
+                    postList.add(map);
+                }
             } catch (JSONException e) {
                 e.printStackTrace();
             }
-
         }
     }
+
+    public static int sizeOfSharedPrefs(SharedPreferences inputSharedpreference){
+        Map<String, ?> allEntries = inputSharedpreference.getAll();
+        return allEntries.size();
+    }
+
+    public void initPostList(){
+        SharedPreferences sharedpreferences = getSharedPreferences(MainActivity.PostPref,
+                Context.MODE_PRIVATE);
+        String jsonString;
+        String mapKey;
+        HashMap<String, Object> map;
+        int number = sizeOfSharedPrefs(sharedpreferences);
+        SharedPreferences.Editor editor = sharedpreferences.edit();
+        for (int i=number; i>=1; i--) {
+            mapKey = "post_" + i;
+            jsonString = sharedpreferences.getString(mapKey, "");
+            JSONObject jsonObject;
+            try {
+                jsonObject = new JSONObject(jsonString);
+                Iterator<String> keysItr = jsonObject.keys();
+                map = new HashMap<String, Object>();
+                while(keysItr.hasNext()) {
+                    String key = keysItr.next();
+                    Object value = jsonObject.get(key);
+                    map.put(key, value);
+                }
+                map.put("display", true);
+                jsonObject = new JSONObject(map);
+                jsonString = jsonObject.toString();
+
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+            editor.putString(mapKey, jsonString);
+        }
+        editor.commit();
+    }
+
 }

@@ -1,13 +1,21 @@
 package com.example.shopwithme;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.util.HashMap;
+import java.util.Iterator;
 
 
 public class Profile_display extends Activity {
@@ -40,6 +48,7 @@ public class Profile_display extends Activity {
         int id = item.getItemId();
         if (id == R.id.action_home) {
             Intent intent = new Intent(this, HomeScreenActivity.class);
+            initPostList();
             startActivity(intent);
         }
         else if (id == R.id.action_post) {
@@ -71,5 +80,38 @@ public class Profile_display extends Activity {
         } else {
             image.setImageDrawable(res.getDrawable(R.drawable.mike));
         }
+    }
+
+    public void initPostList(){
+        SharedPreferences sharedpreferences = getSharedPreferences(MainActivity.PostPref,
+                Context.MODE_PRIVATE);
+        String jsonString;
+        String mapKey;
+        HashMap<String, Object> map;
+        int number = HomeScreenActivity.sizeOfSharedPrefs(sharedpreferences);
+        SharedPreferences.Editor editor = sharedpreferences.edit();
+        for (int i=number; i>=1; i--) {
+            mapKey = "post_" + i;
+            jsonString = sharedpreferences.getString(mapKey, "");
+            JSONObject jsonObject;
+            try {
+                jsonObject = new JSONObject(jsonString);
+                Iterator<String> keysItr = jsonObject.keys();
+                map = new HashMap<String, Object>();
+                while(keysItr.hasNext()) {
+                    String key = keysItr.next();
+                    Object value = jsonObject.get(key);
+                    map.put(key, value);
+                }
+                map.put("display", true);
+                jsonObject = new JSONObject(map);
+                jsonString = jsonObject.toString();
+
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+            editor.putString(mapKey, jsonString);
+        }
+        editor.commit();
     }
 }

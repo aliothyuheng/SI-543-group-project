@@ -217,7 +217,17 @@
             <file
                 path="F:\543\ShopWithMe\app\src\main\res\values\strings.xml"
                 qualifiers="" >
+                <string name="title_activity_filter" >FilterActivity
+                </string>
+                <string name="action_settings" >Settings
+                </string>
+                <string name="hello_blank_fragment" >Hello blank fragment
+                </string>
                 <string name="Welcome" >Welcome
+                </string>
+                <string name="Post" >Post
+                </string>
+                <string name="Message" >Message to the Poster
                 </string>
                 <string name="$" >$
                 </string>
@@ -227,31 +237,45 @@
                 </string>
                 <string name="food" >Food
                 </string>
-                <string name="title_activity_message" >MessageActivity
+                <string name="souvenir" >Souvenir
+                </string>
+                <string name="$$$" >$$$
                 </string>
                 <string name="marys_post" >Mary: Goin to shop for shoes. Anyone want to join?
                 </string>
+                <string name="title_activity_message" >MessageActivity
+                </string>
                 <string name="Poster_profile" >View poster profile
+                </string>
+                <string name="forget_password" >forget password
+                </string>
+                <string name="title_activity_display" >DisplayActivity
                 </string>
                 <string name="Password" >Password
                 </string>
+                <string name="UserName" >UserName
+                </string>
+                <string name="hello_world" >Hello world!
+                </string>
+                <string name="login" >login
+                </string>
+                <string name="Profile" >Edit Profile
+                </string>
+                <string name="prompt" >Budget
+                </string>
+                <string name="title_activity_home_screen" >HomeScreenActivity
+                </string>
+                <string name="title_activity_profile_edit" >profile_edit
+                </string>
+                <string name="type_username" >type your username
+                </string>
                 <string name="$$" >$$
                 </string>
+                <string name="Catoroty" >Category
+                </string>
+                <string name="music" >Music
+                </string>
 
-                <string-array name="city_arrays" >
-                    <item>
-Ann Arbor
-                    </item>
-                    <item>
-New York
-                    </item>
-                    <item>
-Chicago
-                    </item>
-                    <item>
-Los Angeles
-                    </item>
-                </string-array>
                 <string-array name="entries" >
                     <item>
 Budget
@@ -272,104 +296,33 @@ $$$$
 
                 <string name="Location" >Location
                 </string>
-                <string name="title_activity_conversation" >ConversationActivity
-                </string>
-                <string name="Submit" >Submit
-                </string>
-                <string name="categories_prompt" >Categories
-                </string>
-                <string name="clothing" >Clothing
-                </string>
-                <string name="Home" >Home
-                </string>
-                <string name="title_activity_profile_display" >Profile_display
-                </string>
-                <string name="Filter" >Filter
-                </string>
-                <string name="nicks_reply" >Nick: Yes! What time and where?
-                </string>
-                <string name="title_activity_filter" >FilterActivity
-                </string>
-                <string name="action_settings" >Settings
-                </string>
-                <string name="hello_blank_fragment" >Hello blank fragment
-                </string>
-
-                <string-array name="categories_array" >
-                    <item>
-Clothing
-                    </item>
-                    <item>
-Food
-                    </item>
-                    <item>
-Music
-                    </item>
-                    <item>
-Shoes
-                    </item>
-                </string-array>
-
-                <string name="Post" >Post
-                </string>
-                <string name="Message" >Message to the Poster
-                </string>
-                <string name="souvenir" >Souvenir
-                </string>
-                <string name="$$$" >$$$
-                </string>
-                <string name="city_prompt" >Choose a city
-                </string>
-                <string name="forget_password" >forget password
-                </string>
-                <string name="title_activity_display" >DisplayActivity
-                </string>
-                <string name="UserName" >UserName
-                </string>
-                <string name="hello_world" >Hello world!
-                </string>
-                <string name="login" >login
-                </string>
-                <string name="Profile" >Edit Profile
-                </string>
-                <string name="title_activity_home_screen" >HomeScreenActivity
-                </string>
-                <string name="prompt" >Budget
-                </string>
-                <string name="title_activity_profile_edit" >profile_edit
-                </string>
-
-                <string-array name="budget_array" >
-                    <item>
-$
-                    </item>
-                    <item>
-$$
-                    </item>
-                    <item>
-$$$
-                    </item>
-                </string-array>
-
-                <string name="type_username" >type your username
-                </string>
-                <string name="Catoroty" >Category
-                </string>
-                <string name="music" >Music
-                </string>
-                <string name="budget_prompt" >Budget
-                </string>
                 <string name="Reply" >Reply to this Post
+                </string>
+                <string name="title_activity_conversation" >ConversationActivity
                 </string>
                 <string name="sign_up" >sign up
                 </string>
                 <string name="title_activity_new_post" >NewPostActivity
                 </string>
+                <string name="categories_prompt" >Categories
+                </string>
+                <string name="Submit" >Submit
+                </string>
                 <string name="sarahs_reply" >Sarah: I would like to go too!
+                </string>
+                <string name="clothing" >Clothing
+                </string>
+                <string name="Home" >Home
                 </string>
                 <string name="app_name" >ShopWithMe
                 </string>
+                <string name="title_activity_profile_display" >Profile_display
+                </string>
                 <string name="type_password" >type your password
+                </string>
+                <string name="nicks_reply" >Nick: Yes! What time and where?
+                </string>
+                <string name="Filter" >Filter
                 </string>
             </file>
             <file

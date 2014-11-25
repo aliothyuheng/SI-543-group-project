@@ -2,13 +2,13 @@
 <merger version="2" >
 
     <dataSet config="20.0.0" >
-        <source path="F:\543\ShopWithMe\app\build\intermediates\exploded-aar\com.android.support\support-v4\20.0.0\assets" />
+        <source path="C:\Users\olivi_000\Documents\GitHub\SI-543-group-project\SI-543-group-project\ShopWithMe\app\build\intermediates\exploded-aar\com.android.support\support-v4\20.0.0\assets" />
     </dataSet>
     <dataSet config="main" >
-        <source path="F:\543\ShopWithMe\app\src\main\assets" />
+        <source path="C:\Users\olivi_000\Documents\GitHub\SI-543-group-project\SI-543-group-project\ShopWithMe\app\src\main\assets" />
     </dataSet>
     <dataSet config="debug" >
-        <source path="F:\543\ShopWithMe\app\src\debug\assets" />
+        <source path="C:\Users\olivi_000\Documents\GitHub\SI-543-group-project\SI-543-group-project\ShopWithMe\app\src\debug\assets" />
     </dataSet>
 
 </merger>

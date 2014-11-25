@@ -14,8 +14,20 @@
         revision="20.0.0"
         sha1="e40b3078e3fbd353c9f44da8df25a8fc0078209d"/>
     <item
+        dex="C:\Users\olivi_000\Documents\GitHub\SI-543-group-project\SI-543-group-project\ShopWithMe\app\build\intermediates\pre-dexed\debug\internal_impl-20.0.0-c8c33f246183bc60d27aa47bfe0f2f8d2b6620ac.jar"
+        jar="C:\Users\olivi_000\Documents\GitHub\SI-543-group-project\SI-543-group-project\ShopWithMe\app\build\intermediates\exploded-aar\com.android.support\support-v4\20.0.0\libs\internal_impl-20.0.0.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="e40b3078e3fbd353c9f44da8df25a8fc0078209d"/>
+    <item
         dex="F:\543\ShopWithMe\app\build\intermediates\pre-dexed\debug\classes-d380e8bab5118c25a8a266264f10524946ef3ec9.jar"
         jar="F:\543\ShopWithMe\app\build\intermediates\exploded-aar\com.android.support\support-v4\20.0.0\classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="8694693636ab36910c8100ce527c258ff3ebece0"/>
+    <item
+        dex="C:\Users\olivi_000\Documents\GitHub\SI-543-group-project\SI-543-group-project\ShopWithMe\app\build\intermediates\pre-dexed\debug\classes-9895d89eb3064f8e9579bc282dee5615b837e424.jar"
+        jar="C:\Users\olivi_000\Documents\GitHub\SI-543-group-project\SI-543-group-project\ShopWithMe\app\build\intermediates\exploded-aar\com.android.support\support-v4\20.0.0\classes.jar"
         jumboMode="false"
         revision="20.0.0"
         sha1="8694693636ab36910c8100ce527c258ff3ebece0"/>

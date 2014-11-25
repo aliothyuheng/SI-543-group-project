@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <!-- From: file:/F:/543/ShopWithMe/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/C:/Users/olivi_000/Documents/GitHub/SI-543-group-project/SI-543-group-project/ShopWithMe/app/src/main/res/values/strings.xml -->
     <eat-comment />
 
     <string-array name="entries">
@@ -11,12 +11,12 @@
         <item>$$$</item>
         <item>$$$$</item>
     </string-array>
-    <!-- From: file:/F:/543/ShopWithMe/app/src/main/res/values/dimens.xml -->
+    <!-- From: file:/C:/Users/olivi_000/Documents/GitHub/SI-543-group-project/SI-543-group-project/ShopWithMe/app/src/main/res/values/dimens.xml -->
     <eat-comment />
 
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
-    <!-- From: file:/F:/543/ShopWithMe/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/C:/Users/olivi_000/Documents/GitHub/SI-543-group-project/SI-543-group-project/ShopWithMe/app/src/main/res/values/strings.xml -->
     <eat-comment />
 
     <string name="$">$</string>
@@ -34,17 +34,17 @@
     <string name="Profile">Edit Profile</string>
     <string name="Reply">Reply to this Post</string>
     <string name="Submit">Submit</string>
-    <string name="UserName">UserName</string>
+    <string name="Username">Username</string>
     <string name="Welcome">Welcome</string>
     <string name="action_settings">Settings</string>
     <string name="app_name">ShopWithMe</string>
     <string name="categories_prompt">Categories</string>
     <string name="clothing">Clothing</string>
     <string name="food">Food</string>
-    <string name="forget_password">forget password</string>
+    <string name="forgot_password">forgot password?</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="hello_world">Hello world!</string>
-    <string name="login">login</string>
+    <string name="login">Login</string>
     <string name="marys_post">Mary: Goin to shop for shoes. Anyone want to join?</string>
     <string name="music">Music</string>
     <string name="nicks_reply">Nick: Yes! What time and where?</string>
@@ -61,9 +61,9 @@
     <string name="title_activity_profile">ProfileActivity</string>
     <string name="title_activity_profile_display">Profile_display</string>
     <string name="title_activity_profile_edit">profile_edit</string>
-    <string name="type_password">type your password</string>
-    <string name="type_username">type your username</string>
-    <!-- From: file:/F:/543/ShopWithMe/app/src/main/res/values/styles.xml -->
+    <string name="type_password">password</string>
+    <string name="type_username">username</string>
+    <!-- From: file:/C:/Users/olivi_000/Documents/GitHub/SI-543-group-project/SI-543-group-project/ShopWithMe/app/src/main/res/values/styles.xml -->
     <eat-comment />
 
     <style name="AppBaseTheme" parent="android:Theme.Light">

@@ -32,7 +32,7 @@
 
     <ListView
         android:layout_width="wrap_content"
-        android:layout_height="400dp"
+        android:layout_height="match_parent"
 
         android:layout_marginTop="20dp"
         android:id="@+id/my_list_view">
@@ -297,4 +297,4 @@
          -->
 
 </LinearLayout>
-<!-- From: file:/F:/SI-543-group-project-master/ShopWithMe/app/src/main/res/layout/activity_home_screen.xml -->
+<!-- From: file:/C:/Users/olivi_000/Documents/GitHub/SI-543-group-project/ShopWithMe/app/src/main/res/layout/activity_home_screen.xml -->

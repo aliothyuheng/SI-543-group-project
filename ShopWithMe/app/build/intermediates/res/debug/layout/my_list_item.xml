@@ -14,7 +14,8 @@
         android:layout_height="40dp" />
 
     <RelativeLayout
-        android:layout_width="250dp"
+        android:layout_width="match_parent"
+        android:layout_marginRight="10dp"
         android:layout_height="wrap_content"
         android:background="@drawable/texteditbackground"
         android:layout_toRightOf="@id/user_image"
@@ -24,7 +25,7 @@
             android:id="@+id/name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:padding="10dp"
+            android:padding="5dp"
             android:background="@drawable/roundbutton"
             android:textSize="20sp"
             android:textColor="#eeffff"
@@ -73,4 +74,4 @@
     </RelativeLayout>
 
 </RelativeLayout>
-<!-- From: file:/F:/SI-543-group-project-master/ShopWithMe/app/src/main/res/layout/my_list_item.xml -->
+<!-- From: file:/C:/Users/olivi_000/Documents/GitHub/SI-543-group-project/ShopWithMe/app/src/main/res/layout/my_list_item.xml -->

@@ -8,16 +8,19 @@
 
     <TextView
         android:id="@+id/name"
-        android:layout_width="70dp"
-        android:layout_height="30dp"
-        android:textSize="20dp"
-        android:textColor="#0066FF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:background="@drawable/roundbutton"
+        android:textSize="20sp"
+        android:textColor="#eeffff"
         android:textStyle="italic"/>
 
     <TextView
         android:id="@+id/reply"
         android:layout_width="250dp"
         android:layout_height="55dp"
-        android:layout_below="@id/name" />
+        android:layout_below="@id/name"
+        android:background="@drawable/texteditbackground"/>
 
-</RelativeLayout><!-- From: file:/F:/SI-543-group-project-master/ShopWithMe/app/src/main/res/layout/reply_list_item.xml -->
+</RelativeLayout><!-- From: file:/C:/Users/olivi_000/Documents/GitHub/SI-543-group-project/ShopWithMe/app/src/main/res/layout/reply_list_item.xml -->

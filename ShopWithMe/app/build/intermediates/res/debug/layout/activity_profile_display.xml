@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#E2F2FA"
+    android:background="#fff700"
     android:gravity="center_horizontal"
     android:orientation="vertical" >
 
@@ -71,4 +71,4 @@
     </TextView>
 
 </LinearLayout>
-<!-- From: file:/F:/SI-543-group-project-master/ShopWithMe/app/src/main/res/layout/activity_profile_display.xml -->
+<!-- From: file:/C:/Users/olivi_000/Documents/GitHub/SI-543-group-project/ShopWithMe/app/src/main/res/layout/activity_profile_display.xml -->

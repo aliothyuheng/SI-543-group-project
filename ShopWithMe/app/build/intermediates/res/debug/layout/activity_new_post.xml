@@ -11,6 +11,14 @@
     android:background="#FFF700"
     tools:context="com.example.shopwithme.NewPostActivity" >
 
+    <ImageView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:src="@drawable/newposttitle"
+        android:padding="0dp"
+        android:layout_gravity="center_horizontal"
+        />
+
     <TextView
         android:id="@+id/Category"
         android:layout_width="wrap_content"
@@ -99,4 +107,4 @@
 
 
 </LinearLayout>
-<!-- From: file:/F:/SI-543-group-project-master/ShopWithMe/app/src/main/res/layout/activity_new_post.xml -->
+<!-- From: file:/C:/Users/olivi_000/Documents/GitHub/SI-543-group-project/ShopWithMe/app/src/main/res/layout/activity_new_post.xml -->

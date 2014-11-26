@@ -199,7 +199,8 @@ public class HomeScreenActivity extends Activity {
                 //set up pop menu for reply button
                 setPopup(holder.replyButton, posterName, postContent);
                 //set up view profile for name text
-                viewProfile(holder.name);
+                viewProfile(holder.name, posterName);
+                viewProfile(holder.userImage, posterName);
             }
             return convertView;
         }
@@ -234,14 +235,13 @@ public class HomeScreenActivity extends Activity {
     }
 
     //set up a onclick listener on the textview
-    public void viewProfile(final TextView tx) {
-        tx.setOnClickListener(new View.OnClickListener() {
+    public void viewProfile(final View view, final String posterName) {
+        view.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(HomeScreenActivity.this, Profile_display.class);
-                String name = tx.getText().toString();
                 //pass the user name to the profile display screen
-                intent.putExtra("UserName", name);
+                intent.putExtra("UserName", posterName);
                 startActivity(intent);
             }
         });

@@ -15,50 +15,52 @@
 
     <RelativeLayout
         android:layout_width="250dp"
-        android:layout_height="100dp"
-        android:background="#FFFFCC"
+        android:layout_height="wrap_content"
+        android:background="@drawable/texteditbackground"
         android:layout_toRightOf="@id/user_image"
         android:layout_marginLeft="20dp">
 
         <TextView
             android:id="@+id/name"
-            android:layout_width="60dp"
-            android:layout_height="30dp"
-            android:textSize="20dp"
-            android:textColor="#0066FF"
-            android:textStyle="italic"/>
-
-        <TextView
-            android:id="@+id/budget"
-            android:layout_width="40dp"
-            android:layout_height="30dp"
-            android:layout_toRightOf="@id/name"
-            android:textSize="15dp"
-            android:textColor="#0066FF"
-            android:textStyle="italic"/>
-
-        <TextView
-            android:id="@+id/category"
-            android:layout_width="60dp"
-            android:layout_height="30dp"
-            android:layout_toRightOf="@id/budget"
-            android:textSize="15dp"
-            android:textColor="#0066FF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="@drawable/roundbutton"
+            android:textSize="20sp"
+            android:textColor="#eeffff"
             android:textStyle="italic"/>
 
         <TextView
             android:id="@+id/location"
             android:layout_width="70dp"
             android:layout_height="30dp"
-            android:layout_toRightOf="@id/category"
-            android:textSize="15dp"
-            android:textColor="#0066FF"
+            android:textSize="15sp"
+            android:textColor="#ff4100"
+            android:textStyle="italic"
+            android:layout_alignParentRight="true" />
+
+        <TextView
+            android:id="@+id/category"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_toLeftOf="@id/location"
+            android:textSize="15sp"
+            android:textColor="#ff4100"
+            android:textStyle="italic"/>
+
+        <TextView
+            android:id="@+id/budget"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_toLeftOf="@id/category"
+            android:textSize="15sp"
+            android:textColor="#ff4100"
             android:textStyle="italic"/>
 
         <TextView
             android:id="@+id/post"
-            android:layout_width="250dp"
-            android:layout_height="55dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_below="@id/name" />
 
         <ImageButton
@@ -67,8 +69,8 @@
             android:layout_height="30dp"
             android:layout_below="@id/post"
             android:layout_alignRight="@id/post"
-            android:background="@drawable/reply" />
+            android:src="@drawable/reply" />
     </RelativeLayout>
 
 </RelativeLayout>
-<!-- From: file:/C:/Users/olivi_000/Documents/GitHub/SI-543-group-project/SI-543-group-project/ShopWithMe/app/src/main/res/layout/my_list_item.xml -->
+<!-- From: file:/F:/SI-543-group-project-master/ShopWithMe/app/src/main/res/layout/my_list_item.xml -->

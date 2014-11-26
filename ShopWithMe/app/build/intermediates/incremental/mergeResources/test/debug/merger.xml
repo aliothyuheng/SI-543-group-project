@@ -2,9 +2,9 @@
 <merger version="2" >
 
     <dataSet config="main" >
-        <source path="C:\Users\olivi_000\Documents\GitHub\SI-543-group-project\SI-543-group-project\ShopWithMe\app\src\androidTest\res" />
-        <source path="C:\Users\olivi_000\Documents\GitHub\SI-543-group-project\SI-543-group-project\ShopWithMe\app\build\generated\res\rs\test\debug" />
-        <source path="C:\Users\olivi_000\Documents\GitHub\SI-543-group-project\SI-543-group-project\ShopWithMe\app\build\generated\res\generated\test\debug" />
+        <source path="F:\SI-543-group-project-master\ShopWithMe\app\src\androidTest\res" />
+        <source path="F:\SI-543-group-project-master\ShopWithMe\app\build\generated\res\rs\test\debug" />
+        <source path="F:\SI-543-group-project-master\ShopWithMe\app\build\generated\res\generated\test\debug" />
     </dataSet>
 
 </merger>

@@ -2,7 +2,7 @@
 <merger version="2" >
 
     <dataSet config="main" >
-        <source path="C:\Users\olivi_000\Documents\GitHub\SI-543-group-project\SI-543-group-project\ShopWithMe\app\src\androidTest\assets" />
+        <source path="F:\SI-543-group-project-master\ShopWithMe\app\src\androidTest\assets" />
     </dataSet>
 
 </merger>

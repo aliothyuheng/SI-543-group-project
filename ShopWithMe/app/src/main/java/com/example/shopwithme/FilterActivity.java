@@ -1,6 +1,7 @@
 package com.example.shopwithme;
 
 import android.app.Activity;
+import android.app.FragmentManager;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -30,6 +31,7 @@ public class FilterActivity extends Activity {
     private String category;
     private String location;
     private String budget;
+    private boolean hasElement=false;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -150,6 +152,7 @@ public class FilterActivity extends Activity {
                 if (map.get("location").equals(location) && map.get("budget").equals(budget)
                         && map.get("category").equals(category)){
                     map.put("display", true);
+                    hasElement = true;
                 }
                 else{
                     map.put("display", false);
@@ -162,7 +165,16 @@ public class FilterActivity extends Activity {
             editor.putString(mapKey, jsonString);
         }
         editor.commit();
-		startActivity(intent);
+        if (hasElement == true){
+            startActivity(intent);
+        }
+        else{
+            FragmentManager fm = getFragmentManager();
+            FilterAlterFragment alter = new FilterAlterFragment();
+            alter.setRetainInstance(true);
+            alter.show(fm, "fragment_filter_alter");
+        }
+
 	}
 
     public void initPostList(){

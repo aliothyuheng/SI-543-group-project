@@ -415,6 +415,11 @@ $$$$
                 path="C:\Users\olivi_000\Documents\GitHub\SI-543-group-project\ShopWithMe\app\src\main\res\drawable\editprofiletititle.png"
                 qualifiers=""
                 type="drawable" />
+            <file
+                name="fragment_filter_alter"
+                path="C:\Users\olivi_000\Documents\GitHub\SI-543-group-project\ShopWithMe\app\src\main\res\layout\fragment_filter_alter.xml"
+                qualifiers=""
+                type="layout" />
         </source>
         <source path="C:\Users\olivi_000\Documents\GitHub\SI-543-group-project\ShopWithMe\app\build\generated\res\rs\debug" />
         <source path="C:\Users\olivi_000\Documents\GitHub\SI-543-group-project\ShopWithMe\app\build\generated\res\generated\debug" />

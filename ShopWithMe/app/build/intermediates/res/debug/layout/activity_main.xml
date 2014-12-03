@@ -67,30 +67,5 @@
         style="?android:attr/buttonStyleSmall"
         android:onClick="Login"/>
 
-    <Button
-        android:id="@+id/SignUpButton"
-
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_alignParentBottom="true"
-        android:layout_alignStart="@+id/LoginButton"
-        android:text="@string/sign_up"
-        android:textColor="#ffffff"
-        android:background = "@drawable/roundbutton"
-        style="?android:attr/buttonStyleSmall"/>
-
-    <Button
-        android:id="@+id/ForgetPasswordButton"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_alignParentBottom="true"
-        android:layout_alignEnd="@+id/LoginButton"
-        android:text="@string/forgot_password"
-        android:textColor="#ffffff"
-        android:background = "@drawable/roundbutton"
-        style="?android:attr/buttonStyleSmall"/>
-
 </RelativeLayout>
 <!-- From: file:/C:/Users/olivi_000/Documents/GitHub/SI-543-group-project/ShopWithMe/app/src/main/res/layout/activity_main.xml -->

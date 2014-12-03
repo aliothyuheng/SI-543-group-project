@@ -3,7 +3,6 @@
     tools:context="com.example.shopwithme.HomeScreenActivity" >
 
     <item android:id="@+id/action_filter"
-        android:icon="@drawable/filter"
         android:title="@string/Filter"
         android:showAsAction="ifRoom"/>
        
